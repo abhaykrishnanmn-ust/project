@@ -1,4 +1,4 @@
-## Airbnb UI Automation
+## airbnb UI Automation
 
 ![Airbnb_Exported](https://github.com/user-attachments/assets/b8fd45d5-22e9-4e2a-bfdb-e4649c79fe50)
 
