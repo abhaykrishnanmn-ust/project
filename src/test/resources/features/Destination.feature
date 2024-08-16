@@ -1,4 +1,4 @@
-Feature: Validate login functionality
+Feature: Validate Destination functionality
 
   Scenario: Check for where to
     Given user opens website
