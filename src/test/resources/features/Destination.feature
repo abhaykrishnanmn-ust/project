@@ -116,3 +116,4 @@ Feature: Validate stays functionalities
     When user search is performed
     And user selects map options
     Then verify content as what you will do is present with same price in map
+

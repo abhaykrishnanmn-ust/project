@@ -6,7 +6,8 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class BookingSteps {
-    BookingPage bookingPage=new BookingPage();
+    BookingPage bookingPage = new BookingPage();
+
     @Then("verify searched page is displayed")
     public void verify_searched_page_is_displayed() {
         Assert.assertTrue(bookingPage.isSearchedPageIsDisplayed());
