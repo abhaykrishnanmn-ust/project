@@ -19,6 +19,8 @@ public class BookingSteps {
 
     @Then("verify displayed details with the input details")
     public void verify_displayed_details_with_the_input_details() {
-        bookingPage.verifyDetails();
+        Assert.assertTrue(bookingPage.verifyCheckInDate());
+        Assert.assertTrue(bookingPage.verifyCheckOutDate());
+        Assert.assertTrue(bookingPage.verifyNoOfPersons());
     }
 }
