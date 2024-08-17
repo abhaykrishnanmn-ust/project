@@ -43,6 +43,26 @@ Feature: Validate stays functionalities
     And user selects filter by Host language
     Then user clicks on show
     When user selects first card
-    Then verify displayed details with the user intrest
+    Then verify displayed details with the user interest
 
-    
+  Scenario: Verify hosting
+    Given user opens website
+    When user clicks on Airbnb your home
+    Then verify text You could earn is displayed
+
+  Scenario: Verify language option
+    Given user opens website
+    When user clicks on global icon
+    Then verify language options are displayed
+    When user clicks on language
+    Then verify language is changed to the selected language
+
+  Scenario: Verify currency
+    Given user opens website
+    When user clicks on global icon
+    And user selects currency
+    Then verify currency options are displayed
+    Then select the currency
+    And user select on rooms
+    When user clicks on the card
+    Then verify currency is changed to the selected currency
