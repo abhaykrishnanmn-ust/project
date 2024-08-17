@@ -1,12 +1,12 @@
-Feature: Validate Destination functionality
+Feature: Validate stays functionalities
 
-  Scenario: Check for where to
+  Scenario: Verify searching destination functionality
     Given user opens website
     When user clicks on where
-    Then user selects destination
-    And curresponding location is selected
-    Then date is selected
-    And number of people is selected
-    Then first card is selected
-    When details are checked
-    Then verify with the deatils given for booking with details in the page
+    Then user selects destination by "region"
+    And  select check in and check out date
+    And  select number of people
+    When user click on search button
+    Then verify searched page is displayed
+    When user selects first card
+    Then verify displayed details with the input details
