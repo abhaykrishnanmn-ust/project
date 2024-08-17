@@ -78,3 +78,9 @@ Feature: Validate stays functionalities
     When user clicks on the first card
     And user selects Meet your Host more option
     Then verify displayed details with the host details
+
+  Scenario: Verify user is able to use help centre option
+    Given user opens website
+    And user clicks on profile icon
+    When user clicks on the help centre option
+    Then verify help centre page is displayed with text "Hi, how can we help"
