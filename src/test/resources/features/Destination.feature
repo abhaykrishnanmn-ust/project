@@ -21,3 +21,10 @@ Feature: Validate stays functionalities
     Then verify searched page is displayed
     When user selects first card
     Then verify displayed details with the input details
+
+  Scenario: Verify farm option has farm in description
+  Given user opens website
+  When user clicks on farm
+  And user clicks on search button
+  Then user selects first card
+  Then verify farm description contains "farm" in it
