@@ -66,3 +66,15 @@ Feature: Validate stays functionalities
     And user select on rooms
     When user clicks on the card
     Then verify currency is changed to the selected currency
+
+  Scenario: Verify image sliding functionality
+    Given user opens website
+    When user clicks on the next in card image
+    Then verify image sliding functionality is working properly
+  
+  
+  Scenario: Verify user is getting the correct host information
+    Given user opens website
+    When user clicks on the first card
+    And user selects Meet your Host more option
+    Then verify displayed details with the host details
