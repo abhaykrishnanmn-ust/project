@@ -71,8 +71,7 @@ Feature: Validate stays functionalities
     Given user opens website
     When user clicks on the next in card image
     Then verify image sliding functionality is working properly
-  
-  
+
   Scenario: Verify user is getting the correct host information
     Given user opens website
     When user clicks on the first card
@@ -84,3 +83,36 @@ Feature: Validate stays functionalities
     And user clicks on profile icon
     When user clicks on the help centre option
     Then verify help centre page is displayed with text "Hi, how can we help"
+
+  Scenario: Verify Price
+    Given user opens website
+    When user clicks on the first card
+    And get price and total price
+    Then verify price is displayed correctly
+
+  Scenario: Verify before tax price button
+    Given user opens website
+    When user clicks on the Display total before taxes
+    Then verify before tax price is displayed correctly
+
+  Scenario: Verify map name on card
+    Given user opens website
+    When user clicks on the Show map
+    And user clicks on the card
+    Then verify map card detail with page detail
+
+  Scenario: Verify things to do with what you will do
+    Given user opens website
+    When user clicks on things to do
+    Then user selects destination
+    When user search is performed
+    And user selects first card
+    Then verify content as what you will do is present
+
+  Scenario: Verify things to do with map
+    Given user opens website
+    When user clicks on things to do
+    Then user selects destination
+    When user search is performed
+    And user selects map options
+    Then verify content as what you will do is present with same price in map
