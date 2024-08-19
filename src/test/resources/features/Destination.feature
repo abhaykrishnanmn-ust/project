@@ -117,3 +117,16 @@ Feature: Validate stays functionalities
     And user selects map options
     Then verify content as what you will do is present with same price in map
 
+  Scenario: Verify Host preview and host in card
+    Given user opens website
+    When user clicks on where
+    Then user selects destination by "region"
+    And select check in and check out date
+    And select number of people
+    When user click on search button
+    Then verify searched page is displayed
+    When user selects a card with host preview
+    Then host details are taken
+    When user close the preview
+    And user open the same card
+    Then verify displayed details with the details in preview
