@@ -15,10 +15,10 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[text()='Check in']")
     WebElement clickOnCheckInDate;
 
-    @FindBy(xpath = "//h2[text()='August 2024']/ancestor::div/table//tr/td[contains(@aria-label,'18')]")
+    @FindBy(xpath = "//h2[text()='September 2024']/ancestor::div/table//tr/td[contains(@aria-label,'18')]")
     WebElement selectCheckInDate;
 
-    @FindBy(xpath = "//h2[text()='August 2024']/ancestor::div/table//tr/td[contains(@aria-label,'19')]")
+    @FindBy(xpath = "//h2[text()='September 2024']/ancestor::div/table//tr/td[contains(@aria-label,'19')]")
     WebElement selectCheckOutDate;
 
     @FindBy(xpath = "//div[text()='Check out']")
@@ -39,11 +39,12 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnWhere() {
-        whereInput.click();
+        while(!clickOnRegion.isDisplayed()){
+            whereInput.click();
+        }
     }
 
     public void selectRegion(String region) {
-        whereInput.click();
         clickOnRegion.click();
     }
 
