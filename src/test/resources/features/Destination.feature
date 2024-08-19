@@ -156,3 +156,17 @@ Feature: Validate stays functionalities
     And user selects show more dates
     When user selects different dates then
     Then verify displayed details are different from the previous
+
+  Scenario: Verify card traversal for Experiences
+    Given user opens website
+    When user clicks on experiences
+    Then user gives destination by typing "bali"
+    When user clicks on destination
+    And select check in and check out date
+    And select number of people
+    When user click on search button
+    Then verify searched page is displayed
+    When user selects first card
+    Then user scrolls through the page
+    When user clicks on the card on bottom
+    Then verify displayed details with the details on card
