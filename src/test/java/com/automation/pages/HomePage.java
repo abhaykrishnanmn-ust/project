@@ -36,7 +36,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//h1[@id='searchFlow-title-label-adults']/ancestor::section/following-sibling::div/button[2]")
     WebElement addAdults;
 
-    @FindBy(xpath = "//div[text()='Check out']/following-sibling::div")
+    @FindBy(xpath = "//div[text()='Who']/following-sibling::div")
     WebElement fetchNoOfPeoplesFromUserInput;
 
     @FindBy(xpath = "//button[@data-testid='structured-search-input-search-button']")
@@ -69,14 +69,14 @@ public class HomePage extends BasePage {
 //        clickOnCheckOutDate.click();
         selectCheckOutDate.click();
         String userCheckOutDate=fetchCheckOutDateFromUserInput.getText().split(" ")[0];
-        ConfigReader.setValue("check.in.date",userCheckOutDate);
+        ConfigReader.setValue("check.out.date",userCheckOutDate);
     }
 
     public void selectNumberOfPeople() {
         clickOnAddGuest.click();
         addAdults.click();
-        String NoOfPeoplesByUserInput=fetchNoOfPeoplesFromUserInput.getText().split(" ")[0];
-        ConfigReader.setValue("check.in.date",NoOfPeoplesByUserInput);
+        String NoOfPeoplesByUserInput=fetchNoOfPeoplesFromUserInput.getText().split("&")[0];
+        ConfigReader.setValue("no.of.persons",NoOfPeoplesByUserInput);
     }
 
     public void clickOnSearch() {
