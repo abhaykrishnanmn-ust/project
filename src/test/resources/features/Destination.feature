@@ -170,3 +170,14 @@ Feature: Validate stays functionalities
     Then user scrolls through the page
     When user clicks on the card on bottom
     Then verify displayed details with the details on card
+
+  Scenario: Verify distribution and total price
+    Given user opens website
+    When user clicks on where
+    Then user selects destination by "region"
+    And select check in and check out date
+    And select number of people
+    When user click on search button
+    Then verify searched page is displayed
+    When user selects any card
+    Then verify the price distribution is equals total price
