@@ -129,4 +129,4 @@ Feature: Validate stays functionalities
     Then host details are taken
     When user close the preview
     And user open the same card
-    Then verify displayed details with the details in preview
+    Then verify displayed host details with the details in preview
