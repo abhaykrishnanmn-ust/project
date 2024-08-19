@@ -181,3 +181,10 @@ Feature: Validate stays functionalities
     Then verify searched page is displayed
     When user selects any card
     Then verify the price distribution is equals total price
+
+  Scenario: Verify hosting page price slider
+    Given user opens website
+    When user clicks on Airbnb your home
+    Then verify text You could earn is displayed
+    When user uses slider
+    Then verify the price is changing
