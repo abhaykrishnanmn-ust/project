@@ -130,3 +130,29 @@ Feature: Validate stays functionalities
     When user close the preview
     And user open the same card
     Then verify displayed host details with the details in preview
+
+  Scenario: Verify typing destination for Experiences
+    Given user opens website
+    When user clicks on experiences
+    Then user gives destination by typing "bali"
+    When user clicks on destination
+    And select check in and check out date
+    And select number of people
+    When user click on search button
+    Then verify searched page is displayed
+    When user selects first card
+    Then verify displayed details with the input details
+
+  Scenario: Verify date change for Experiences
+    Given user opens website
+    When user clicks on experiences
+    Then user gives destination by typing "bali"
+    When user clicks on destination
+    And select check in and check out date
+    And select number of people
+    When user click on search button
+    Then verify searched page is displayed
+    When user selects first card
+    And user selects show more dates
+    When user selects different dates then
+    Then verify displayed details are different from the previous
