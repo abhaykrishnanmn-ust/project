@@ -2,6 +2,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify searching destination functionality
     Given user opens website
+    And verify user is on homepage
     When user clicks on where
     Then user selects destination by "region"
     And select check in and check out date
@@ -13,6 +14,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify searching destination for Experiences
     Given user opens website
+    And verify user is on homepage
     When user clicks on experiences
     And user clicks on where
     Then user selects destination by "region"
@@ -53,13 +55,17 @@ Feature: Validate stays functionalities
 
   Scenario: Verify language option
     Given user opens website
+    And verify user is on homepage
     When user clicks on global icon
     Then verify language options are displayed
     When user clicks on language
+    Then verify user is on homepage
+    When user clicks on global icon
     Then verify language is changed to the selected language
 
   Scenario: Verify currency
     Given user opens website
+    And verify user is on homepage
     When user clicks on global icon
     And user selects currency
     Then verify currency options are displayed
@@ -135,7 +141,7 @@ Feature: Validate stays functionalities
   Scenario: Verify typing destination for Experiences
     Given user opens website
     When user clicks on experiences
-    Then user gives destination by typing "bali"
+    Then user types location "bali" in the search destination field
     When user clicks on destination
     And select check in and check out date
     And select number of people

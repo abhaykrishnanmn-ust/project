@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class HomeSteps {
     HomePage homePage = new HomePage();
@@ -13,6 +14,11 @@ public class HomeSteps {
     @Given("user opens website")
     public void userOpensWebsite() {
         homePage.openWebsite();
+    }
+
+    @Then("verify user is on homepage")
+    public void verify_user_is_on_homepage() {
+        Assert.assertTrue(homePage.isHomePageDisplayed());
     }
 
     @When("user clicks on where")
@@ -50,5 +56,34 @@ public class HomeSteps {
     @And("select dates")
     public void selectDates() {
         homePage.selectDatesOfExperiences();
+    }
+    @When("user clicks on global icon")
+    public void user_clicks_on_global_icon() {
+        homePage.clickOnGlobalIcon();
+    }
+
+    @Then("verify language options are displayed")
+    public void verify_language_options_are_displayed() {
+        Assert.assertTrue(homePage.verifyLanguageIsDisplayed());
+    }
+
+    @When("user clicks on language")
+    public void user_clicks_on_language() {
+        homePage.selectLanguage();
+    }
+
+    @Then("verify language is changed to the selected language")
+    public void verify_language_is_changed_to_the_selected_language() {
+        Assert.assertTrue(homePage.verifyLanguageIsChanged());
+    }
+
+    @Then("user types location {string} in the search destination field")
+    public void userTypesLocationInTheSearchDestinationField(String destination) {
+        homePage.searchDestinationInStays(destination);
+    }
+
+    @When("user clicks on destination")
+    public void userClicksOnDestination() {
+        homePage.clickOnLocationInStaysSearch();
     }
 }

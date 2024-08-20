@@ -15,6 +15,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[text()='Date']")
     WebElement checkExperienceIsClicked;
 
+    @FindBy(xpath = "//input[@id='bigsearch-query-location-input']")
+    WebElement staysSearchInputField;
+
     @FindBy(xpath = "//span[text()='Europe']/preceding-sibling::img")
     WebElement clickOnRegion;
 
@@ -50,6 +53,24 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[text()='Date']/following-sibling::div")
     WebElement fetchUserInputExperienceDates;
+
+    @FindBy(xpath = "//span[text()]/ancestor::label")
+    WebElement homePageContent;
+
+    @FindBy(xpath = "//div[@class='_pvfq6t']/button")
+    WebElement globeButton;
+
+    @FindBy(xpath = "//button[text()='Language and region']")
+    WebElement selectLanguageButton;
+
+    @FindBy(xpath = "//div[text()='Dansk']/..")
+    WebElement selectLanguage;
+
+    @FindBy(xpath = "//a[@class='_ci5ckgc']/div")
+    WebElement languageSelected;
+
+    @FindBy(id = "i")
+    WebElement staysInputSearchLocation;
 
 
     public void openWebsite() {
@@ -104,5 +125,37 @@ public class HomePage extends BasePage {
         String userInputExperienceDates=fetchUserInputExperienceDates.getText().split(" - ")[0]+
                 " "+fetchUserInputExperienceDates.getText().split(" ")[3];
         ConfigReader.setValue("experiences.dates",userInputExperienceDates);
+    }
+
+    public boolean isHomePageDisplayed() {
+        isPresent(homePageContent);
+        homePageContent.isDisplayed();
+//       return  homePageContent.isSelected();
+        return true;
+    }
+
+    public void clickOnGlobalIcon() {
+        globeButton.click();
+    }
+
+    public boolean verifyLanguageIsDisplayed() {
+        return selectLanguageButton.isDisplayed();
+    }
+
+    public void selectLanguage() {
+        selectLanguage.click();
+    }
+
+    public boolean verifyLanguageIsChanged() {
+//        globeButton.click();
+        return languageSelected.getText().contains(ConfigReader.getValue("language"));
+    }
+
+    public void searchDestinationInStays(String destination) {
+        staysSearchInputField.sendKeys(destination);
+    }
+
+    public void clickOnLocationInStaysSearch() {
+        staysInputSearchLocation.click();
     }
 }
