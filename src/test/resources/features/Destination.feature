@@ -14,13 +14,14 @@ Feature: Validate stays functionalities
   Scenario: Verify searching destination for Experiences
     Given user opens website
     When user clicks on experiences
+    And user clicks on where
     Then user selects destination by "region"
-    And select check in and check out date
+    And select dates
     And select number of people
     When user click on search button
-    Then verify searched page is displayed
-    When user selects first card
-    Then verify displayed details with the input details
+    Then verify experience page is displayed
+    When user selects first card on experience page
+    Then verify displayed details on experience page with the input details
 
   Scenario: Verify farm option has farm in description
     Given user opens website

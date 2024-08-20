@@ -2,6 +2,7 @@ package com.automation.steps;
 
 import com.automation.pages.HomePage;
 import com.automation.utils.ConfigReader;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,6 +22,7 @@ public class HomeSteps {
 
     @Then("user selects destination by {string}")
     public void user_selects_destination_by(String region) {
+
         homePage.selectRegion(ConfigReader.getValue(region));
     }
 
@@ -38,5 +40,15 @@ public class HomeSteps {
     @When("user click on search button")
     public void user_click_on_search_button() {
         homePage.clickOnSearch();
+    }
+
+    @When("user clicks on experiences")
+    public void userClicksOnExperiences() {
+        homePage.clickOnExperiences();
+    }
+
+    @And("select dates")
+    public void selectDates() {
+        homePage.selectDatesOfExperiences();
     }
 }

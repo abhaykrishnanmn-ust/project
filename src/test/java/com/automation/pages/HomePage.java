@@ -9,6 +9,12 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//label[@for='bigsearch-query-location-input']")
     WebElement whereInput;
 
+    @FindBy(xpath = "//button[@id='search-block-tab-EXPERIENCES']")
+    WebElement experiencesButton;
+
+    @FindBy(xpath = "//div[text()='Date']")
+    WebElement checkExperienceIsClicked;
+
     @FindBy(xpath = "//span[text()='Europe']/preceding-sibling::img")
     WebElement clickOnRegion;
 
@@ -42,6 +48,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//button[@data-testid='structured-search-input-search-button']")
     WebElement searchButton;
 
+    @FindBy(xpath = "//div[text()='Date']/following-sibling::div")
+    WebElement fetchUserInputExperienceDates;
+
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -62,7 +71,6 @@ public class HomePage extends BasePage {
         selectCheckInDate.click();
         String userCheckInDate=fetchCheckInDateFromUserInput.getText().split(" ")[0];
         ConfigReader.setValue("check.in.date",userCheckInDate);
-
     }
 
     public void selectCheckOutDate() {
@@ -81,5 +89,20 @@ public class HomePage extends BasePage {
 
     public void clickOnSearch() {
         searchButton.click();
+    }
+
+    public void clickOnExperiences() {
+        while(!isDisplayedElement(checkExperienceIsClicked)){
+            experiencesButton.click();
+            System.out.println("clicked");
+        }
+    }
+
+    public void selectDatesOfExperiences() {
+        selectCheckInDate.click();
+        selectCheckOutDate.click();
+        String userInputExperienceDates=fetchUserInputExperienceDates.getText().split(" - ")[0]+
+                " "+fetchUserInputExperienceDates.getText().split(" ")[3];
+        ConfigReader.setValue("experiences.dates",userInputExperienceDates);
     }
 }

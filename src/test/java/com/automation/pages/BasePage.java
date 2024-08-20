@@ -46,6 +46,19 @@ abstract class BasePage {
             resetImplicitWait(60);
         }
     }
+    public boolean isDisplayedElement(WebElement element){
+        try {
+            resetImplicitWait(0);
+            element.isDisplayed();
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
+        finally {
+        resetImplicitWait(60);
+    }
+    }
 
     public void resetImplicitWait(long sec) {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec));
