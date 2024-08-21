@@ -1,6 +1,7 @@
 package com.automation.pages;
 
 import com.automation.utils.ConfigReader;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import java.util.Set;
@@ -21,19 +22,22 @@ public class BookingPage extends BasePage {
     @FindBy(xpath = "//button[@aria-label='Close']")
     WebElement closeTranslate;
 
+    @FindBy(xpath = "//div[@role='presentation']")
+    WebElement cardClick;
+
+    @FindBy(xpath = "//span[@class='_1k4xcdh']")
+    WebElement price;
+
+    @FindBy(xpath = "//div[text()='Total before taxes']/parent::span/following-sibling::span//span[@class='_j1kt73']")
+    WebElement totalPrice;
+
     public boolean isSearchedPageIsDisplayed() {
         return true;
     }
 
     public void clickOnFirstCard() {
         clickOnCard.click();
-        String window = driver.getWindowHandle();
-        Set<String> windowHandles = driver.getWindowHandles();
-        for (String windows : windowHandles) {
-            if (!windows.equals(window)) {
-                driver.switchTo().window(windows);
-            }
-        }
+        switchToNewWindow();
     }
 
     public boolean verifyCheckInDate() {
@@ -57,5 +61,24 @@ public class BookingPage extends BasePage {
         isPresent(fetchCheckInDate);
         String noOfPersonsFetched = fetchNoOfPersons.getText();
         return noOfPersonsFetched.contains(ConfigReader.getValue("no.of.persons"));
+    }
+
+    public void clickOnAnyCard() {
+        isPresent(cardClick);
+        cardClick.click();
+    }
+
+    public void verifyPrice() {
+        String window = driver.getWindowHandle();
+        Set<String> windowHandles = driver.getWindowHandles();
+        for (String windows : windowHandles) {
+            if (!windows.equals(window)) {
+                driver.switchTo().window(windows);
+            }
+        }
+        closeTranslate.click();
+        String displayPrice= String.valueOf(price.getText());
+        String displayTotalPrice= String.valueOf(totalPrice.getText());
+        System.out.println(displayPrice+"==="+displayTotalPrice);
     }
 }

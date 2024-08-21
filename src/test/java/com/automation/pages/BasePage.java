@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Set;
 
 abstract class BasePage {
 
@@ -18,6 +19,15 @@ abstract class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver = DriverManager.getDriver();
         PageFactory.initElements(driver, this);
+    }
+    public void switchToNewWindow(){
+        String window = driver.getWindowHandle();
+        Set<String> windowHandles = driver.getWindowHandles();
+        for (String windows : windowHandles) {
+            if (!windows.equals(window)) {
+                driver.switchTo().window(windows);
+            }
+        }
     }
     public boolean isTextPresent(WebElement element) {
         try {

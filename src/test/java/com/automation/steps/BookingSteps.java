@@ -24,4 +24,15 @@ public class BookingSteps {
         Assert.assertTrue(bookingPage.verifyCheckOutDate());
         Assert.assertTrue(bookingPage.verifyNoOfPersons());
     }
+
+    @When("user selects any card")
+    public void userSelectsAnyCard() {
+        bookingPage.clickOnAnyCard();
+
+    }
+
+    @Then("verify the price distribution is equals total price")
+    public void verifyThePriceDistributionIsEqualsTotalPrice() {
+        bookingPage.verifyPrice();
+    }
 }
