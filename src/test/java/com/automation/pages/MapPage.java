@@ -1,6 +1,7 @@
 package com.automation.pages;
 
 import com.automation.utils.ConfigReader;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -29,17 +30,14 @@ public class MapPage extends BasePage{
     }
 
     public void verifyDetailsCardIsDisplayed() {
-//        isPresent(fetchNameFromCard);
-        isTextPresent(fetchNameFromCard);
         fetchNameFromCard.isDisplayed();
-        System.out.println(fetchNameFromCard.getText());
-        ConfigReader.setValue("map.card.details",fetchNameFromCard.getText());
+        System.out.println(javaExecutorGetText(fetchNameFromCard));
+        ConfigReader.setValue("map.card.details",javaExecutorGetText(fetchNameFromCard));
+        switchToNewWindow();
     }
 
     public void clickDetailsCard() {
-        System.out.println(ConfigReader.getValue("map.card.details"+"====="));
         clickOnMapCard.click();
-
     }
 
     public void verifyMapCardDetails() {

@@ -1,7 +1,6 @@
 package com.automation.pages;
 
 import com.automation.utils.DriverManager;
-import io.cucumber.java.en_old.Ac;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,11 +47,14 @@ abstract class BasePage {
     }
     public boolean isTextPresent(WebElement element) {
         try {
-            wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(element,"")));
+            wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(element,null)));
             return true;
         } catch (Exception e) {
             return false;
         }
+    }
+    public String javaExecutorGetText(WebElement element){
+        return (String) js.executeScript("return arguments[0].innerText;", element);
     }
     public boolean isPresent(WebElement element) {
         try {
