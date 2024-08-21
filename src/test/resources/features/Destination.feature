@@ -143,12 +143,12 @@ Feature: Validate stays functionalities
     When user clicks on experiences
     Then user types location "bali" in the search destination field
     When user clicks on destination
-    And select check in and check out date
+    And select dates
     And select number of people
     When user click on search button
-    Then verify searched page is displayed
-    When user selects first card
-    Then verify displayed details with the input details
+    Then verify experience page is displayed
+    When user selects first card on experience page
+    Then verify displayed details on experience page with the input details
 
   Scenario: Verify date change for Experiences
     Given user opens website

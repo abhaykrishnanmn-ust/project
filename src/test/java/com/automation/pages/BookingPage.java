@@ -37,7 +37,9 @@ public class BookingPage extends BasePage {
     }
 
     public boolean verifyCheckInDate() {
-        closeTranslate.click();
+        if(isPresents(closeTranslate)){
+            closeTranslate.click();
+        }
         isPresent(fetchCheckInDate);
         String checkInDataFetched = fetchCheckInDate.getText();
         System.out.println(checkInDataFetched + "=====" + ConfigReader.getValue("check.in.date"));

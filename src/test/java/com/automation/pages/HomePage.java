@@ -69,7 +69,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[@class='_ci5ckgc']/div")
     WebElement languageSelected;
 
-    @FindBy(id = "i")
+    @FindBy(id = "bigsearch-query-location-suggestion-0")
     WebElement staysInputSearchLocation;
 
 
@@ -156,6 +156,7 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnLocationInStaysSearch() {
+        isPresent(staysInputSearchLocation);
         staysInputSearchLocation.click();
     }
 }
