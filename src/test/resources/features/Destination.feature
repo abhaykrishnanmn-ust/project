@@ -107,6 +107,7 @@ Feature: Validate stays functionalities
   Scenario: Verify before tax price button
     Given user opens website
     And verify user is on homepage
+    When user click on "Beachfront"
     When user clicks on the Display total before taxes
     Then verify before tax price is displayed correctly
 

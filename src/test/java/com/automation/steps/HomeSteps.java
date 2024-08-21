@@ -101,4 +101,14 @@ public class HomeSteps {
     public void userClicksOnTheShowMap() {
         homePage.clickOnShowMap();
     }
+
+    @When("user clicks on the Display total before taxes")
+    public void userClicksOnTheDisplayTotalBeforeTaxes() {
+        homePage.clickOnBeforeTax();
+    }
+
+    @And("user selects currency")
+    public void userSelectsCurrency() {
+        homePage.clickOnCurrency();
+    }
 }

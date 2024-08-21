@@ -81,6 +81,12 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//span[text()='Show map']/ancestor::button")
     WebElement showMapButton;
 
+    @FindBy(xpath = "//button[@role='switch']/div")
+    WebElement taxButton;
+
+    @FindBy(id="tab--language_region_and_currency--1")
+    WebElement currencyButton;
+
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -179,5 +185,13 @@ public class HomePage extends BasePage {
 
     public void clickOnShowMap() {
         showMapButton.click();
+    }
+
+    public void clickOnBeforeTax() {
+        taxButton.click();
+    }
+
+    public void clickOnCurrency() {
+        currencyButton.click();
     }
 }
