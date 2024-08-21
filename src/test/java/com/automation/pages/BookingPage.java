@@ -69,16 +69,10 @@ public class BookingPage extends BasePage {
     }
 
     public void verifyPrice() {
-        String window = driver.getWindowHandle();
-        Set<String> windowHandles = driver.getWindowHandles();
-        for (String windows : windowHandles) {
-            if (!windows.equals(window)) {
-                driver.switchTo().window(windows);
-            }
-        }
+        switchToNewWindow();
         closeTranslate.click();
-        String displayPrice= String.valueOf(price.getText());
-        String displayTotalPrice= String.valueOf(totalPrice.getText());
+        String displayPrice= price.getText();
+        String displayTotalPrice= totalPrice.getText();
         System.out.println(displayPrice+"==="+displayTotalPrice);
     }
 }

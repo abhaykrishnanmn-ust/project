@@ -155,27 +155,28 @@ Feature: Validate stays functionalities
     When user clicks on experiences
     Then user types location "bali" in the search destination field
     When user clicks on destination
-    And select check in and check out date
+    And select dates
     And select number of people
     When user click on search button
-    Then verify searched page is displayed
-    When user selects first card
-    And user selects show more dates
-    When user selects different dates then
-    Then verify displayed details are different from the previous
+    Then verify experience page is displayed
+    When user selects first card on experience page
+    And user click on dates
+    When user changes dates
+    And user click on save
+    Then verify displayed dates are different from previous dates
 
   Scenario: Verify card traversal for Experiences
     Given user opens website
     When user clicks on experiences
     Then user types location "bali" in the search destination field
     When user clicks on destination
-    And select check in and check out date
+    And select dates
     And select number of people
     When user click on search button
-    Then verify searched page is displayed
-    When user selects first card
-    Then user scrolls through the page
-    When user clicks on the card on bottom
+    Then verify experience page is displayed
+    When user selects first card on experience page
+    Then user scrolls through the page till similar experiences
+    When user clicks on the card on similar experiences
     Then verify displayed details with the details on card
 
   Scenario: Verify distribution and total price

@@ -1,8 +1,11 @@
 package com.automation.pages;
 
 import com.automation.utils.DriverManager;
+import io.cucumber.java.en_old.Ac;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,11 +17,15 @@ abstract class BasePage {
 
     WebDriver driver;
     WebDriverWait wait;
+    Actions actions;
+    JavascriptExecutor js;
 
     public BasePage() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver = DriverManager.getDriver();
         PageFactory.initElements(driver, this);
+        actions=new Actions(driver);
+        js = (JavascriptExecutor) driver;
     }
     public void switchToNewWindow(){
         String window = driver.getWindowHandle();
@@ -28,6 +35,16 @@ abstract class BasePage {
                 driver.switchTo().window(windows);
             }
         }
+    }
+    public void scrollTillElement(WebElement element){
+        actions.moveToElement(element).build().perform();
+    }
+    public void scrollThePage(WebElement element){
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    public void javaScriptExecutorClick(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", element);
     }
     public boolean isTextPresent(WebElement element) {
         try {
