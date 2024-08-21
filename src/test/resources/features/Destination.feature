@@ -153,7 +153,7 @@ Feature: Validate stays functionalities
   Scenario: Verify date change for Experiences
     Given user opens website
     When user clicks on experiences
-    Then user gives destination by typing "bali"
+    Then user types location "bali" in the search destination field
     When user clicks on destination
     And select check in and check out date
     And select number of people
@@ -167,7 +167,7 @@ Feature: Validate stays functionalities
   Scenario: Verify card traversal for Experiences
     Given user opens website
     When user clicks on experiences
-    Then user gives destination by typing "bali"
+    Then user types location "bali" in the search destination field
     When user clicks on destination
     And select check in and check out date
     And select number of people
