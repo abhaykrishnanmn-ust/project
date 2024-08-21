@@ -27,6 +27,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify farm option has farm in description
     Given user opens website
+    And verify user is on homepage
     When user clicks on farm
     And user clicks on search button
     Then user selects first card
@@ -34,6 +35,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify filter option
     Given user opens website
+    And verify user is on homepage
     When user clicks on filter
     Then user selects filter by Entire home
     And user selects filter by Price Range
@@ -50,6 +52,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify hosting
     Given user opens website
+    And verify user is on homepage
     When user clicks on Airbnb your home
     Then verify text You could earn is displayed
 
@@ -76,34 +79,40 @@ Feature: Validate stays functionalities
 
   Scenario: Verify image sliding functionality
     Given user opens website
+    And verify user is on homepage
     When user clicks on the next in card image
     Then verify image sliding functionality is working properly
 
   Scenario: Verify user is getting the correct host information
     Given user opens website
+    And verify user is on homepage
     When user clicks on the first card
     And user selects Meet your Host more option
     Then verify displayed details with the host details
 
   Scenario: Verify user is able to use help centre option
     Given user opens website
+    And verify user is on homepage
     And user clicks on profile icon
     When user clicks on the help centre option
     Then verify help centre page is displayed with text "Hi, how can we help"
 
   Scenario: Verify Price
     Given user opens website
+    And verify user is on homepage
     When user clicks on the first card
     And get price and total price
     Then verify price is displayed correctly
 
   Scenario: Verify before tax price button
     Given user opens website
+    And verify user is on homepage
     When user clicks on the Display total before taxes
     Then verify before tax price is displayed correctly
 
   Scenario: Verify map name on card
     Given user opens website
+    And verify user is on homepage
     When user clicks on the Show map
     Then verify map page is displayed
     When user click on one of the price tag displayed
@@ -113,6 +122,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify things to do with what you will do
     Given user opens website
+    And verify user is on homepage
     When user clicks on things to do
     Then user selects destination
     When user search is performed
@@ -121,6 +131,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify things to do with map
     Given user opens website
+    And verify user is on homepage
     When user clicks on things to do
     Then user selects destination
     When user search is performed
@@ -129,6 +140,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify Host preview and host in card
     Given user opens website
+    And verify user is on homepage
     When user clicks on where
     Then user selects destination by "region"
     And select check in and check out date
@@ -143,6 +155,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify typing destination for Experiences
     Given user opens website
+    And verify user is on homepage
     When user clicks on experiences
     Then user types location "bali" in the search destination field
     When user clicks on destination
@@ -155,6 +168,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify date change for Experiences
     Given user opens website
+    And verify user is on homepage
     When user clicks on experiences
     Then user types location "bali" in the search destination field
     When user clicks on destination
@@ -170,6 +184,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify card traversal for Experiences
     Given user opens website
+    And verify user is on homepage
     When user clicks on experiences
     Then user types location "bali" in the search destination field
     When user clicks on destination
@@ -184,6 +199,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify distribution and total price
     Given user opens website
+    And verify user is on homepage
     When user clicks on where
     Then user selects destination by "region"
     And select check in and check out date
@@ -195,6 +211,7 @@ Feature: Validate stays functionalities
 
   Scenario: Verify hosting page price slider
     Given user opens website
+    And verify user is on homepage
     When user clicks on Airbnb your home
     Then verify text You could earn is displayed
     When user uses slider
