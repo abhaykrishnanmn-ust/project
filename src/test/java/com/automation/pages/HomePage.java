@@ -75,6 +75,12 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//nav[@aria-label='Profile']/div/a")
     WebElement airbnbYourHome;
 
+    @FindBy(xpath = "//span[text()='Beachfront']/ancestor::label")
+    WebElement selectBeachfront;
+
+    @FindBy(xpath = "//span[text()='Show map']/ancestor::button")
+    WebElement showMapButton;
+
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -165,5 +171,13 @@ public class HomePage extends BasePage {
 
     public void clickOnAirbnbYourHome() {
         airbnbYourHome.click();
+    }
+
+    public void clickOnBeachfront() {
+        selectBeachfront.click();
+    }
+
+    public void clickOnShowMap() {
+        showMapButton.click();
     }
 }

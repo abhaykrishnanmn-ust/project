@@ -113,7 +113,8 @@ Feature: Validate stays functionalities
   Scenario: Verify map name on card
     Given user opens website
     And verify user is on homepage
-    When user clicks on the Show map
+    When user click on "Beachfront"
+    And user clicks on the Show map
     Then verify map page is displayed
     When user click on one of the price tag displayed
     Then verify details card is displayed

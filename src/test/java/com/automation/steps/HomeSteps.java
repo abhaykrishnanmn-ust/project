@@ -91,4 +91,14 @@ public class HomeSteps {
     public void userClicksOnAirbnbYourHome() {
         homePage.clickOnAirbnbYourHome();
     }
+
+    @When("user click on {string}")
+    public void userClickOn(String Beachfront) {
+        homePage.clickOnBeachfront();
+    }
+
+    @And("user clicks on the Show map")
+    public void userClicksOnTheShowMap() {
+        homePage.clickOnShowMap();
+    }
 }
