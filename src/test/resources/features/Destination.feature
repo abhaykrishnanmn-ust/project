@@ -105,7 +105,10 @@ Feature: Validate stays functionalities
   Scenario: Verify map name on card
     Given user opens website
     When user clicks on the Show map
-    And user clicks on the card
+    Then verify map page is displayed
+    When user click on one of the price tag displayed
+    Then verify details card is displayed
+    When user clicks on the details card
     Then verify map card detail with page detail
 
   Scenario: Verify things to do with what you will do
