@@ -86,4 +86,9 @@ public class HomeSteps {
     public void userClicksOnDestination() {
         homePage.clickOnLocationInStaysSearch();
     }
+
+    @When("user clicks on Airbnb your home")
+    public void userClicksOnAirbnbYourHome() {
+        homePage.clickOnAirbnbYourHome();
+    }
 }

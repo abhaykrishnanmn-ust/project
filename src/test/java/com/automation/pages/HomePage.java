@@ -72,6 +72,9 @@ public class HomePage extends BasePage {
     @FindBy(id = "bigsearch-query-location-suggestion-0")
     WebElement staysInputSearchLocation;
 
+    @FindBy(xpath = "//nav[@aria-label='Profile']/div/a")
+    WebElement airbnbYourHome;
+
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -158,5 +161,9 @@ public class HomePage extends BasePage {
     public void clickOnLocationInStaysSearch() {
         isPresent(staysInputSearchLocation);
         staysInputSearchLocation.click();
+    }
+
+    public void clickOnAirbnbYourHome() {
+        airbnbYourHome.click();
     }
 }
