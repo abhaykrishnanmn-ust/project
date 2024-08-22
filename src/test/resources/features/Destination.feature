@@ -86,8 +86,9 @@ Feature: Validate stays functionalities
   Scenario: Verify user is getting the correct host information
     Given user opens website
     And verify user is on homepage
-    When user clicks on the first card
-    And user selects Meet your Host more option
+    When user click on "Amazing views"
+    And user selects first card
+    And user selects Meet your Host option
     Then verify displayed details with the host details
 
   Scenario: Verify user is able to use help centre option

@@ -78,6 +78,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//span[text()='Beachfront']/ancestor::label")
     WebElement selectBeachfront;
 
+    @FindBy(xpath = "//span[text()='Amazing views']/ancestor::label")
+    WebElement selectAmazingViews;
+
     @FindBy(xpath = "//span[text()='Show map']/ancestor::button")
     WebElement showMapButton;
 
@@ -86,6 +89,12 @@ public class HomePage extends BasePage {
 
     @FindBy(id="tab--language_region_and_currency--1")
     WebElement currencyButton;
+
+    @FindBy(xpath="//a[text()='Message Host']")
+    WebElement messageHostButton;
+
+    @FindBy(xpath="//a[@aria-label='Go to Host full profile']")
+    WebElement hostProfileCard;
 
 
     public void openWebsite() {
@@ -179,8 +188,13 @@ public class HomePage extends BasePage {
         airbnbYourHome.click();
     }
 
-    public void clickOnBeachfront() {
-        selectBeachfront.click();
+    public void clickOnBeachfront(String location) {
+        if(location.equals("Amazing views")){
+            selectAmazingViews.click();
+        }
+        else {
+            selectBeachfront.click();
+        }
     }
 
     public void clickOnShowMap() {
@@ -193,5 +207,13 @@ public class HomePage extends BasePage {
 
     public void clickOnCurrency() {
         currencyButton.click();
+    }
+
+    public void selectMeetYourHost() {
+        scrollThePage(messageHostButton);
+        hostProfileCard.click();
+    }
+
+    public void verifyDisplayedDetailsOfHost() {
     }
 }

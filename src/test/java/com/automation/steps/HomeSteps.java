@@ -93,8 +93,8 @@ public class HomeSteps {
     }
 
     @When("user click on {string}")
-    public void userClickOn(String Beachfront) {
-        homePage.clickOnBeachfront();
+    public void userClickOn(String location) {
+        homePage.clickOnBeachfront(location);
     }
 
     @And("user clicks on the Show map")
@@ -110,5 +110,15 @@ public class HomeSteps {
     @And("user selects currency")
     public void userSelectsCurrency() {
         homePage.clickOnCurrency();
+    }
+
+    @When("user selects Meet your Host option")
+    public void user_selects_meet_your_host_option() {
+        homePage.selectMeetYourHost();
+    }
+
+    @Then("verify displayed details with the host details")
+    public void verify_displayed_details_with_the_host_details() {
+        homePage.verifyDisplayedDetailsOfHost();
     }
 }
