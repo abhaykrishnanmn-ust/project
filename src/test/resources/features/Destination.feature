@@ -72,7 +72,7 @@ Feature: Validate stays functionalities
     When user clicks on global icon
     And user selects currency
     Then verify currency options are displayed
-    Then select the currency
+    And select the currency
     And user select on rooms
     When user clicks on the card
     Then verify currency is changed to the selected currency
