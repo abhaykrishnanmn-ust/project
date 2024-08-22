@@ -117,6 +117,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//button[@data-testid='type-of-place--Entire home']")
     WebElement filterByEntireHome;
 
+    @FindBy(xpath = "//div[@data-section-id='DESCRIPTION_DEFAULT']//h2/div")
+    WebElement thingsToDoMessage;
+
     @FindBy(xpath = "")
     WebElement filterByPrice;
 
@@ -270,5 +273,11 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnPriceFilter() {
+    }
+
+    public boolean verifyThingsToDoMessage(String message) {
+        switchToNewWindow();
+        scrollThePage(thingsToDo);
+        return thingsToDo.getText().contains(message);
     }
 }

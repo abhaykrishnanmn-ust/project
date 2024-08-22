@@ -156,4 +156,10 @@ public class HomeSteps {
     public void userSelectsFilterByPriceRange() {
         homePage.clickOnPriceFilter();
     }
+
+
+    @Then("verify displayed details with the text")
+    public void verifyDisplayedDetailsWithTheText(String message) {
+        Assert.assertTrue(homePage.verifyThingsToDoMessage(message));
+    }
 }

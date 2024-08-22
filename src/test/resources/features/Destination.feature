@@ -133,7 +133,8 @@ Feature: Validate stays functionalities
     Then user selects destination
     When user search is performed
     And user selects first card
-    Then verify content as what you will do is present
+    Then verify displayed details with the text
+      |What you'll do|
 
   Scenario: Verify things to do with map
     Given user opens website

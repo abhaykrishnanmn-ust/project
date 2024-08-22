@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.Set;
 
 public class BookingPage extends BasePage {
-    @FindBy(xpath = "//div[@role='presentation']")
+    @FindBy(xpath = "//div[@itemprop='itemListElement']")
     WebElement clickOnCard;
 
     @FindBy(xpath = "//div[@data-testid='change-dates-checkIn']")
@@ -36,8 +36,9 @@ public class BookingPage extends BasePage {
     }
 
     public void clickOnFirstCard() {
-        clickOnCard.click();
         switchToNewWindow();
+        clickOnCard.click();
+
     }
 
     public boolean verifyCheckInDate() {
