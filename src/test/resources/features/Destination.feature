@@ -28,7 +28,7 @@ Feature: Validate stays functionalities
   Scenario: Verify farm option has farm in description
     Given user opens website
     And verify user is on homepage
-    When user clicks on farm
+    When user click on "farm"
     And user clicks on search button
     Then user selects first card
     Then verify farm description contains "farm" in it
@@ -36,6 +36,7 @@ Feature: Validate stays functionalities
   Scenario: Verify filter option
     Given user opens website
     And verify user is on homepage
+    When user click on "farm"
     When user clicks on filter
     Then user selects filter by Entire home
     And user selects filter by Price Range

@@ -121,4 +121,39 @@ public class HomeSteps {
     public void verify_displayed_details_with_the_host_details() {
         homePage.verifyDisplayedDetailsOfHost();
     }
+
+    @And("user clicks on profile icon")
+    public void userClicksOnProfileIcon() {
+        homePage.profileIconSelection();
+    }
+
+    @When("user clicks on the help centre option")
+    public void userClicksOnTheHelpCentreOption() {
+        homePage.clicksOnHelpCentre();
+    }
+
+    @When("user clicks on things to do")
+    public void userClicksOnThingsToDo() {
+        homePage.clicksOnThingsToDo();
+    }
+
+    @Then("user selects destination")
+    public void userSelectsDestination() {
+        homePage.clickOnDestination();
+    }
+
+    @When("user clicks on filter")
+    public void userClicksOnFilter() {
+        homePage.clickOnFilterOption();
+    }
+
+    @Then("user selects filter by Entire home")
+    public void userSelectsFilterByEntireHome() {
+        homePage.clickOnEntireHome();
+    }
+
+    @And("user selects filter by Price Range")
+    public void userSelectsFilterByPriceRange() {
+        homePage.clickOnPriceFilter();
+    }
 }

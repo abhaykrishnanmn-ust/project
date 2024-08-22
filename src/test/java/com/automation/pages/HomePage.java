@@ -81,6 +81,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//span[text()='Amazing views']/ancestor::label")
     WebElement selectAmazingViews;
 
+    @FindBy(xpath = "//span[text()='Farms']/ancestor::label")
+    WebElement selectFarm;
+
     @FindBy(xpath = "//span[text()='Show map']/ancestor::button")
     WebElement showMapButton;
 
@@ -95,6 +98,27 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath="//a[@aria-label='Go to Host full profile']")
     WebElement hostProfileCard;
+
+    @FindBy(xpath = "//div[@class='_3hmsj']//child::button")
+    WebElement profileIcon;
+
+    @FindBy(xpath = "//div[@data-testid='simple-header-profile-menu']//a[4]")
+    WebElement helpCentre;
+
+    @FindBy(xpath = "//button[@id='tab--seo-link-section-tabbed-dense-grid--7']")
+    WebElement thingsToDo;
+
+    @FindBy(xpath = "//div[@id=\"panel--seo-link-section-tabbed-dense-grid--7\"]/ul/li[13]/a/span[1]")
+    WebElement destination;
+
+    @FindBy(xpath = "//button[@data-testid='category-bar-filter-button']")
+    WebElement filterButton;
+
+    @FindBy(xpath = "//button[@data-testid='type-of-place--Entire home']")
+    WebElement filterByEntireHome;
+
+    @FindBy(xpath = "")
+    WebElement filterByPrice;
 
 
     public void openWebsite() {
@@ -192,8 +216,11 @@ public class HomePage extends BasePage {
         if(location.equals("Amazing views")){
             selectAmazingViews.click();
         }
-        else {
+        else if(location.equals("Beachfront")){
             selectBeachfront.click();
+        }
+        else {
+            selectFarm.click();
         }
     }
 
@@ -215,5 +242,33 @@ public class HomePage extends BasePage {
     }
 
     public void verifyDisplayedDetailsOfHost() {
+    }
+
+    public void profileIconSelection() {
+        profileIcon.click();
+    }
+
+    public void clicksOnHelpCentre() {
+        helpCentre.click();
+        switchToNewWindow();
+    }
+
+    public void clicksOnThingsToDo(){
+        thingsToDo.click();
+    }
+
+    public void clickOnDestination() {
+        destination.click();
+    }
+
+    public void clickOnFilterOption() {
+        filterButton.click();
+    }
+
+    public void clickOnEntireHome() {
+        filterByEntireHome.click();
+    }
+
+    public void clickOnPriceFilter() {
     }
 }
