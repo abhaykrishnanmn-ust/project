@@ -45,6 +45,12 @@ abstract class BasePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
     }
+    public void sliderSlideXAxis(WebElement element,int value){
+        actions.clickAndHold(element)
+                .moveByOffset(value, 0).pause(1000)
+                .release()
+                .perform();
+    }
     public boolean isTextPresent(WebElement element) {
         try {
             wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(element,null)));

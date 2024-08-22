@@ -22,6 +22,6 @@ public class AirbnbYourHomeSteps {
 
     @Then("verify the price is changing")
     public void verifyThePriceIsChanging() {
-
+        Assert.assertFalse(airbnbYourHomePage.verifyPriceChange());
     }
 }
