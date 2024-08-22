@@ -55,7 +55,8 @@ Feature: Validate stays functionalities
     Given user opens website
     And verify user is on homepage
     When user clicks on Airbnb your home
-    Then verify text You could earn is displayed
+    Then verify Airbnb your home is displayed with text
+      |You could earn|
 
   Scenario: Verify language option
     Given user opens website
@@ -97,7 +98,8 @@ Feature: Validate stays functionalities
     And verify user is on homepage
     And user clicks on profile icon
     When user clicks on the help centre option
-    Then verify help centre page is displayed with text "Hi, how can we help"
+    Then verify help centre page is displayed with text
+        |Hi, how can we help|
 
   Scenario: Verify Price
     Given user opens website
@@ -217,6 +219,7 @@ Feature: Validate stays functionalities
     Given user opens website
     And verify user is on homepage
     When user clicks on Airbnb your home
-    Then verify text You could earn is displayed
+    Then verify Airbnb your home is displayed with text
+      |You could earn|
     When user uses slider
     Then verify the price is changing
