@@ -69,7 +69,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[@class='_ci5ckgc']/div")
     WebElement languageSelected;
 
-    @FindBy(id = "bigsearch-query-location-suggestion-0")
+    @FindBy(xpath = "//div[contains(text(),'Bali')]")
     WebElement staysInputSearchLocation;
 
     @FindBy(xpath = "//nav[@aria-label='Profile']/div/a")
