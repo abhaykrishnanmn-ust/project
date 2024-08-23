@@ -51,6 +51,9 @@ abstract class BasePage {
                 .release()
                 .perform();
     }
+    public void moveToAnElement(WebElement element){
+        actions.moveToElement(element).pause(Duration.ofMillis(10)).build().perform();
+    }
     public boolean isTextPresent(WebElement element) {
         try {
             wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(element,null)));

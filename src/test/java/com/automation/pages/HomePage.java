@@ -123,6 +123,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//span[@class='isqgmsg dir dir-ltr']/ancestor::button[contains(@aria-label,'Next photo:')]")
     WebElement slideNextImageButton;
 
+    @FindBy(xpath = "//div[@role='img']")
+    WebElement slideImageElement;
+
     @FindBy(xpath = "")
     WebElement filterByPrice;
 
@@ -285,10 +288,11 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnNextCardImage() {
+        moveToAnElement(slideNextImageButton);
         slideNextImageButton.click();
     }
 
     public void verifySlidingImage() {
-
+        System.out.println(slideImageElement.getAttribute("aria-label"));
     }
 }
