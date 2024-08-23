@@ -84,7 +84,7 @@ Feature: Validate stays functionalities
     When user click on "Amazing views"
     Then verify user is on homepage
     When user clicks on the next in card image
-    Then verify image sliding functionality is working properly
+    Then verify image displayed is second-"2"
 
   Scenario: Verify user is getting the correct host information
     Given user opens website

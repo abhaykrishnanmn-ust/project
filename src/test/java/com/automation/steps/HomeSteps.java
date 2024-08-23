@@ -168,8 +168,8 @@ public class HomeSteps {
         homePage.clickOnNextCardImage();
     }
 
-    @Then("verify image sliding functionality is working properly")
-    public void verifyImageSlidingFunctionalityIsWorkingProperly() {
-        homePage.verifySlidingImage();
+    @Then("verify image displayed is second-{string}")
+    public void verifyImageDisplayedIsSecond(String page) {
+        Assert.assertTrue(homePage.verifySlidingImage(page));
     }
 }

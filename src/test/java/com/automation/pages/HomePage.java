@@ -292,7 +292,8 @@ public class HomePage extends BasePage {
         slideNextImageButton.click();
     }
 
-    public void verifySlidingImage() {
-        System.out.println(slideImageElement.getAttribute("aria-label"));
+    public boolean verifySlidingImage(String page) {
+        slideImageElement.isDisplayed();
+        return slideImageElement.getAttribute("aria-label").contains(page+" of");
     }
 }
