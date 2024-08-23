@@ -2,6 +2,7 @@ package com.automation.pages;
 
 import com.automation.utils.DriverManager;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -23,10 +24,11 @@ abstract class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver = DriverManager.getDriver();
         PageFactory.initElements(driver, this);
-        actions=new Actions(driver);
+        actions = new Actions(driver);
         js = (JavascriptExecutor) driver;
     }
-    public void switchToNewWindow(){
+
+    public void switchToNewWindow() {
         String window = driver.getWindowHandle();
         Set<String> windowHandles = driver.getWindowHandles();
         for (String windows : windowHandles) {
@@ -35,36 +37,53 @@ abstract class BasePage {
             }
         }
     }
-    public void scrollTillElement(WebElement element){
+
+    public void scrollTillElement(WebElement element) {
         actions.moveToElement(element).build().perform();
     }
-    public void scrollThePage(WebElement element){
+
+    public void scrollThePage(WebElement element) {
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
-    public void javaScriptExecutorClick(WebElement element){
+
+    public void javaScriptExecutorClick(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
     }
-    public void sliderSlideXAxis(WebElement element,int value){
+
+    public void sliderSlideXAxis(WebElement element, int value) {
         actions.clickAndHold(element)
                 .moveByOffset(value, 0).pause(1000)
                 .release()
                 .perform();
     }
-    public void moveToAnElement(WebElement element){
+    public void javaScriptClear(WebElement element){
+        js.executeScript("arguments[0].value = '';", element);
+    }
+
+    public void moveToAnElement(WebElement element) {
         actions.moveToElement(element).pause(Duration.ofMillis(10)).build().perform();
     }
+
+    public void cursorToEndOfWord() {
+        actions.keyDown(Keys.CONTROL).pause(Duration.ofMillis(10)).keyDown(Keys.ARROW_RIGHT)
+                .pause(Duration.ofMillis(10)).keyUp(Keys.CONTROL).pause(Duration.ofMillis(10))
+                .keyUp(Keys.ARROW_RIGHT).pause(Duration.ofMillis(10)).build().perform();
+    }
+
     public boolean isTextPresent(WebElement element) {
         try {
-            wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(element,null)));
+            wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(element, null)));
             return true;
         } catch (Exception e) {
             return false;
         }
     }
-    public String javaExecutorGetText(WebElement element){
+
+    public String javaExecutorGetText(WebElement element) {
         return (String) js.executeScript("return arguments[0].innerText;", element);
     }
+
     public boolean isPresent(WebElement element) {
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
@@ -73,6 +92,7 @@ abstract class BasePage {
             return false;
         }
     }
+
     public boolean isPresents(WebElement element) {
         try {
             resetImplicitWait(0);
@@ -84,18 +104,17 @@ abstract class BasePage {
             resetImplicitWait(60);
         }
     }
-    public boolean isDisplayedElement(WebElement element){
+
+    public boolean isDisplayedElement(WebElement element) {
         try {
             resetImplicitWait(0);
             element.isDisplayed();
             return true;
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             return false;
+        } finally {
+            resetImplicitWait(60);
         }
-        finally {
-        resetImplicitWait(60);
-    }
     }
 
     public void resetImplicitWait(long sec) {

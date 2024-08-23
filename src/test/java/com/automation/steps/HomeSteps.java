@@ -172,4 +172,22 @@ public class HomeSteps {
     public void verifyImageDisplayedIsSecond(String page) {
         Assert.assertTrue(homePage.verifySlidingImage(page));
     }
+
+    @Then("verify total before price is displayed in the page")
+    public void verifyTotalBeforePriceIsDisplayedInThePage() {
+        Assert.assertTrue(homePage.isTotalPriceBeforePageIsDisplayed());
+    }
+
+    @And("user enters minimum price {string} and maximum price {string}")
+    public void userEntersMinimumPriceAndMaximumPrice(String min, String max) throws InterruptedException {
+//        homePage.enterFilterMinimumPrice(min);
+        homePage.enterFilterMaximumPrice(max);
+        homePage.enterFilterMinimumPrice(min);
+    }
+
+    @And("user selects {string} bedrooms and {string} beds")
+    public void userSelectsBedroomsAndBeds(String bedroomsCount, String bedsCount) {
+        homePage.increaseBedroomCount(Integer.parseInt(bedroomsCount));
+        homePage.increaseBedCount(Integer.parseInt(bedsCount));
+    }
 }

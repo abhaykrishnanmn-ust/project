@@ -39,14 +39,14 @@ Feature: Validate stays functionalities
     When user click on "farm"
     When user clicks on filter
     Then user selects filter by Entire home
-    And user selects filter by Price Range
-    And user selects filter by Rooms and Beds
-    And user selects filter by Amenities
-    And user selects filter by Booking options
-    And user selects filter by Top-tier stays
-    And user selects filter by Property type
+    And user enters minimum price "1000" and maximum price "10000"
+    And user selects "2" bedrooms and "2" beds
+    And user selects "Wifi" in Amenities
+    And user selects "Instant Book" in Booking options
+    And user selects guest favourites in Top-tier stays
+    And user selects "Hotel" Property type
     And user selects filter by Accessibility features
-    And user selects filter by Host language
+    And user selects language "English" in filter
     Then user clicks on show
     When user selects first card
     Then verify displayed details with the user interest
@@ -114,7 +114,7 @@ Feature: Validate stays functionalities
     And verify user is on homepage
     When user click on "Beachfront"
     When user clicks on the Display total before taxes
-    Then verify before tax price is displayed correctly
+    Then verify total before price is displayed in the page
 
   Scenario: Verify map name on card
     Given user opens website

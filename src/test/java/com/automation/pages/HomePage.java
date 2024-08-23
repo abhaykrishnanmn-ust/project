@@ -90,13 +90,13 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//button[@role='switch']/div")
     WebElement taxButton;
 
-    @FindBy(id="tab--language_region_and_currency--1")
+    @FindBy(id = "tab--language_region_and_currency--1")
     WebElement currencyButton;
 
-    @FindBy(xpath="//a[text()='Message Host']")
+    @FindBy(xpath = "//a[text()='Message Host']")
     WebElement messageHostButton;
 
-    @FindBy(xpath="//a[@aria-label='Go to Host full profile']")
+    @FindBy(xpath = "//a[@aria-label='Go to Host full profile']")
     WebElement hostProfileCard;
 
     @FindBy(xpath = "//div[@class='_3hmsj']//child::button")
@@ -114,7 +114,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//button[@data-testid='category-bar-filter-button']")
     WebElement filterButton;
 
-    @FindBy(xpath = "//button[@data-testid='type-of-place--Entire home']")
+    @FindBy(xpath = "//span[text()='Entire home']/..")
     WebElement filterByEntireHome;
 
     @FindBy(xpath = "//div[@data-section-id='DESCRIPTION_DEFAULT']//h2/div")
@@ -126,8 +126,26 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[@role='img']")
     WebElement slideImageElement;
 
-    @FindBy(xpath = "")
-    WebElement filterByPrice;
+    @FindBy(xpath = "//span[@class='_1lsdkkh']")
+    WebElement totalPriceBeforePageIsDisplayed;
+
+    @FindBy(xpath = "//button[@aria-label='Minimum Price']")
+    WebElement filterMinimumPriceButton;
+
+    @FindBy(xpath = "//button[@aria-label='Maximum Price']")
+    WebElement filterMaximumPriceButton;
+
+    @FindBy(xpath = "//input[@id='price_filter_min']")
+    WebElement filterMinimumPriceInput;
+
+    @FindBy(xpath = "//input[@id='price_filter_max']")
+    WebElement filterMaximumPriceInput;
+
+    @FindBy(xpath = "//button[@data-testid='stepper-filter-item-min_bedrooms-stepper-increase-button']")
+    WebElement bedroomCountButton;
+
+    @FindBy(xpath = "//button[@data-testid='stepper-filter-item-min_beds-stepper-increase-button']")
+    WebElement bedCountButton;
 
 
     public void openWebsite() {
@@ -135,7 +153,7 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnWhere() {
-        while(!clickOnRegion.isDisplayed()){
+        while (!clickOnRegion.isDisplayed()) {
             whereInput.click();
         }
     }
@@ -147,22 +165,22 @@ public class HomePage extends BasePage {
     public void selectCheckInDate() {
         clickOnCheckInDate.click();
         selectCheckInDate.click();
-        String userCheckInDate=fetchCheckInDateFromUserInput.getText().split(" ")[0];
-        ConfigReader.setValue("check.in.date",userCheckInDate);
+        String userCheckInDate = fetchCheckInDateFromUserInput.getText().split(" ")[0];
+        ConfigReader.setValue("check.in.date", userCheckInDate);
     }
 
     public void selectCheckOutDate() {
 //        clickOnCheckOutDate.click();
         selectCheckOutDate.click();
-        String userCheckOutDate=fetchCheckOutDateFromUserInput.getText().split(" ")[0];
-        ConfigReader.setValue("check.out.date",userCheckOutDate);
+        String userCheckOutDate = fetchCheckOutDateFromUserInput.getText().split(" ")[0];
+        ConfigReader.setValue("check.out.date", userCheckOutDate);
     }
 
     public void selectNumberOfPeople() {
         clickOnAddGuest.click();
         addAdults.click();
-        String NoOfPeoplesByUserInput=fetchNoOfPeoplesFromUserInput.getText().split("&")[0];
-        ConfigReader.setValue("no.of.persons",NoOfPeoplesByUserInput);
+        String NoOfPeoplesByUserInput = fetchNoOfPeoplesFromUserInput.getText().split("&")[0];
+        ConfigReader.setValue("no.of.persons", NoOfPeoplesByUserInput);
     }
 
     public void clickOnSearch() {
@@ -170,7 +188,7 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnExperiences() {
-        while(!isDisplayedElement(checkExperienceIsClicked)){
+        while (!isDisplayedElement(checkExperienceIsClicked)) {
             experiencesButton.click();
             System.out.println("clicked");
         }
@@ -179,9 +197,9 @@ public class HomePage extends BasePage {
     public void selectDatesOfExperiences() {
         selectCheckInDate.click();
         selectCheckOutDate.click();
-        String userInputExperienceDates=fetchUserInputExperienceDates.getText().split(" - ")[0]+
-                " "+fetchUserInputExperienceDates.getText().split(" ")[3];
-        ConfigReader.setValue("experiences.dates",userInputExperienceDates);
+        String userInputExperienceDates = fetchUserInputExperienceDates.getText().split(" - ")[0] +
+                " " + fetchUserInputExperienceDates.getText().split(" ")[3];
+        ConfigReader.setValue("experiences.dates", userInputExperienceDates);
     }
 
     public boolean isHomePageDisplayed() {
@@ -222,13 +240,11 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnBeachfront(String location) {
-        if(location.equals("Amazing views")){
+        if (location.equals("Amazing views")) {
             selectAmazingViews.click();
-        }
-        else if(location.equals("Beachfront")){
+        } else if (location.equals("Beachfront")) {
             selectBeachfront.click();
-        }
-        else {
+        } else {
             selectFarm.click();
         }
     }
@@ -262,7 +278,7 @@ public class HomePage extends BasePage {
         switchToNewWindow();
     }
 
-    public void clicksOnThingsToDo(){
+    public void clicksOnThingsToDo() {
         thingsToDo.click();
     }
 
@@ -275,6 +291,7 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnEntireHome() {
+        filterByEntireHome.isDisplayed();
         filterByEntireHome.click();
     }
 
@@ -294,6 +311,45 @@ public class HomePage extends BasePage {
 
     public boolean verifySlidingImage(String page) {
         slideImageElement.isDisplayed();
-        return slideImageElement.getAttribute("aria-label").contains(page+" of");
+        return slideImageElement.getAttribute("aria-label").contains(page + " of");
+    }
+
+    public boolean isTotalPriceBeforePageIsDisplayed() {
+        totalPriceBeforePageIsDisplayed.isDisplayed();
+        return totalPriceBeforePageIsDisplayed.getText().contains("total before taxes");
+    }
+
+    public void selectFilterMinimumPrice() {
+        scrollThePage(filterMinimumPriceButton);
+        sliderSlideXAxis(filterMinimumPriceButton,500);
+    }
+
+    public void selectFilterMaximumPrice() {
+        sliderSlideXAxis(filterMaximumPriceButton,-500);
+    }
+
+    public void enterFilterMinimumPrice(String min){
+        filterMinimumPriceInput.click();
+        javaScriptClear(filterMinimumPriceInput);
+        filterMinimumPriceInput.sendKeys(min);
+    }
+
+    public void enterFilterMaximumPrice(String max) {
+        filterMaximumPriceInput.click();
+        javaScriptClear(filterMaximumPriceInput);
+        filterMaximumPriceInput.sendKeys(max);
+    }
+
+    public void increaseBedroomCount(int bedroomsCount) {
+        scrollThePage(bedCountButton);
+        for(int i=0;i<bedroomsCount;i++){
+            bedroomCountButton.click();
+        }
+    }
+
+    public void increaseBedCount(int bedsCount) {
+        for(int i=0;i<bedsCount;i++){
+            bedCountButton.click();
+        }
     }
 }
