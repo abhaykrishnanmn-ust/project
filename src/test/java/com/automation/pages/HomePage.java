@@ -120,6 +120,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[@data-section-id='DESCRIPTION_DEFAULT']//h2/div")
     WebElement thingsToDoMessage;
 
+    @FindBy(xpath = "//span[@class='isqgmsg dir dir-ltr']/ancestor::button[contains(@aria-label,'Next photo:')]")
+    WebElement slideNextImageButton;
+
     @FindBy(xpath = "")
     WebElement filterByPrice;
 
@@ -279,5 +282,13 @@ public class HomePage extends BasePage {
         switchToNewWindow();
         scrollThePage(thingsToDo);
         return thingsToDo.getText().contains(message);
+    }
+
+    public void clickOnNextCardImage() {
+        slideNextImageButton.click();
+    }
+
+    public void verifySlidingImage() {
+
     }
 }

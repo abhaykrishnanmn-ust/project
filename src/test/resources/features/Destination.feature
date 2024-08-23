@@ -81,7 +81,8 @@ Feature: Validate stays functionalities
 
   Scenario: Verify image sliding functionality
     Given user opens website
-    And verify user is on homepage
+    When user click on "Amazing views"
+    Then verify user is on homepage
     When user clicks on the next in card image
     Then verify image sliding functionality is working properly
 

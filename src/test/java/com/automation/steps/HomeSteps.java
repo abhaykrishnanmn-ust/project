@@ -162,4 +162,14 @@ public class HomeSteps {
     public void verifyDisplayedDetailsWithTheText(String message) {
         Assert.assertTrue(homePage.verifyThingsToDoMessage(message));
     }
+
+    @When("user clicks on the next in card image")
+    public void userClicksOnTheNextInCardImage() {
+        homePage.clickOnNextCardImage();
+    }
+
+    @Then("verify image sliding functionality is working properly")
+    public void verifyImageSlidingFunctionalityIsWorkingProperly() {
+        homePage.verifySlidingImage();
+    }
 }

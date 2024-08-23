@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+
 public class BookingSteps {
     BookingPage bookingPage = new BookingPage();
 
@@ -35,4 +36,5 @@ public class BookingSteps {
     public void verifyThePriceDistributionIsEqualsTotalPrice() {
         bookingPage.verifyPrice();
     }
+
 }
