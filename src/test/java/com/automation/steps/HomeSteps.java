@@ -190,4 +190,9 @@ public class HomeSteps {
         homePage.increaseBedroomCount(Integer.parseInt(bedroomsCount));
         homePage.increaseBedCount(Integer.parseInt(bedsCount));
     }
+
+    @Then("verify currency options are displayed")
+    public void verifyCurrencyOptionsAreDisplayed() {
+        homePage.lineOnCurrency();
+    }
 }

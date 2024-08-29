@@ -147,6 +147,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//button[@data-testid='stepper-filter-item-min_beds-stepper-increase-button']")
     WebElement bedCountButton;
 
+    @FindBy(xpath = "//h2[@elementtiming='LCP-target']")
+    WebElement currencyOptions;
+
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -351,5 +354,9 @@ public class HomePage extends BasePage {
         for(int i=0;i<bedsCount;i++){
             bedCountButton.click();
         }
+    }
+
+    public void lineOnCurrency() {
+        currencyOptions.isDisplayed();
     }
 }
