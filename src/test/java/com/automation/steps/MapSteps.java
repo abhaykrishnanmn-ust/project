@@ -2,6 +2,7 @@ package com.automation.steps;
 
 import com.automation.pages.MapPage;
 import com.automation.utils.ConfigReader;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -30,5 +31,10 @@ public class MapSteps {
     @Then("verify map card detail with page detail")
     public void verify_map_card_detail_with_page_detail() {
         mapPage.verifyMapCardDetails();
+    }
+
+    @And("user selects map options")
+    public void userSelectsMapOptions() {
+        mapPage.clickOnMapOption();
     }
 }

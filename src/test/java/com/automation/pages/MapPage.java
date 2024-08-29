@@ -21,6 +21,12 @@ public class MapPage extends BasePage{
     @FindBy(xpath = "//div[@data-testid='card-container']")
     WebElement clickOnMapCard;
 
+    @FindBy(xpath = "//button[@data-testid='map/markers/BaseCircleMarker']")
+    WebElement clickOnMapIcon;
+
+    @FindBy(xpath = "//div[@data-testid='card-container']")
+    WebElement clickOnCard;
+
     public void verifyMapPageIsDisplayed() {
         priceTagButton.isDisplayed();
     }
@@ -41,5 +47,11 @@ public class MapPage extends BasePage{
     }
 
     public void verifyMapCardDetails() {
+    }
+
+    public void clickOnMapOption() {
+        switchToNewWindow();
+        clickOnMapIcon.click();
+        clickOnCard.click();
     }
 }
