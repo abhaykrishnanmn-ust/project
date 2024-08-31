@@ -195,4 +195,10 @@ public class HomeSteps {
     public void verifyCurrencyOptionsAreDisplayed() {
         homePage.lineOnCurrency();
     }
+
+    @And("select the currency")
+    public void selectTheCurrency() {
+        homePage.clickOnNewCurrency();
+    }
+
 }

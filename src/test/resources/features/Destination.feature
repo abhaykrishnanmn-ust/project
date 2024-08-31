@@ -29,7 +29,6 @@ Feature: Validate stays functionalities
     Given user opens website
     And verify user is on homepage
     When user click on "farm"
-    And user clicks on search button
     Then user selects first card
     Then verify farm description contains "farm" in it
 
@@ -75,8 +74,6 @@ Feature: Validate stays functionalities
     And user selects currency
     Then verify currency options are displayed
     And select the currency
-    And user select on rooms
-    When user clicks on the card
     Then verify currency is changed to the selected currency
 
   Scenario: Verify image sliding functionality
@@ -102,10 +99,17 @@ Feature: Validate stays functionalities
     Then verify help centre page is displayed with text
         |Hi, how can we help|
 
-  Scenario: Verify Price
+  Scenario: Verify Price of Experience
     Given user opens website
     And verify user is on homepage
-    When user clicks on the first card
+    When user clicks on experiences
+    And user clicks on where
+    Then user selects destination by "region"
+    And select dates
+    And select number of people
+    When user click on search button
+    Then verify experience page is displayed
+    When user selects first card on experience page
     And get price and total price
     Then verify price is displayed correctly
 
