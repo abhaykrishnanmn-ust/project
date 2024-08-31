@@ -48,7 +48,6 @@ public class ExperiencePage extends BasePage {
     public void selectFirstCardOnExperiencePage() {
         javaScriptExecutorClick(firstCardOnExperiencePage);
         switchToNewWindow();
-        closeTranslate.click();
     }
 
     public void verifyDetailsOnExperience() {

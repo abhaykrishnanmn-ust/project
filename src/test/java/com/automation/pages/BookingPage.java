@@ -42,9 +42,8 @@ public class BookingPage extends BasePage {
     }
 
     public boolean verifyCheckInDate() {
-        if(isPresents(closeTranslate)){
-            closeTranslate.click();
-        }
+        switchToNewWindow();
+        closeTranslate.click();
         isPresent(fetchCheckInDate);
         String checkInDataFetched = fetchCheckInDate.getText();
         System.out.println(checkInDataFetched + "=====" + ConfigReader.getValue("check.in.date"));
@@ -52,7 +51,6 @@ public class BookingPage extends BasePage {
     }
 
     public boolean verifyCheckOutDate() {
-        isPresent(fetchCheckInDate);
         String checkOutDataFetched = fetchCheckOutDate.getText();
         System.out.println(checkOutDataFetched + "=====" + ConfigReader.getValue("check.out.date"));
         return checkOutDataFetched.contains(ConfigReader.getValue("check.out.date"));
