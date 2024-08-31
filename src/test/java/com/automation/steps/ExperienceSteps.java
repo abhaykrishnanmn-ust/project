@@ -59,4 +59,9 @@ public class ExperienceSteps {
     public void verifyDisplayedDatesAreDifferentFromPreviousDates() {
         experiencePage.verifyNewDates();
     }
+
+    @And("get price and total price")
+    public void getPriceAndTotalPrice() {
+        experiencePage.verifyPrice();
+    }
 }

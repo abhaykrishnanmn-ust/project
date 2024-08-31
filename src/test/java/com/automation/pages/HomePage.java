@@ -163,6 +163,36 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//button[@id='filter-item-ib']")
     WebElement instantBook;
 
+    @FindBy(xpath = "//button[@aria-pressed=\"false\"]//descendant::span//descendant::span")
+    WebElement favourite;
+
+    @FindBy(xpath = "//span[text()='Hotel']")
+    WebElement hotel;
+
+    @FindBy(xpath = "//h2[text()='Property type']")
+    WebElement propertyType;
+
+    @FindBy(xpath = "//h2[text()='Accessibility features']")
+    WebElement accessibility;
+
+    @FindBy(xpath = "//input[@name='Step-free guest entrance']")
+    WebElement stepFreeGuestOption;
+
+    @FindBy(xpath = "//div[text()='Accessible parking spot']")
+    WebElement parking;
+
+    @FindBy(xpath = "//div[text()='Toilet grab bar']")
+    WebElement grabBar;
+
+    @FindBy(xpath = "//h2[@id='filter-section-heading-id-FILTER_SECTION_CONTAINER:HOST_LANGUAGE']")
+    WebElement hostLanguage;
+
+    @FindBy(xpath = "//div[text()='English']")
+    WebElement hostLanguageSelect;
+
+    @FindBy(xpath = "//div[@class='ptiimno atm_7l_1p8m8iw dir dir-ltr']")
+    WebElement show;
+
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
     }
@@ -386,6 +416,27 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnFavourite() {
+        favourite.click();
+    }
 
+    public void clickOnHotel() {
+        propertyType.click();
+        hotel.click();
+    }
+
+    public void clickOnAccessibility() {
+        accessibility.click();
+//        stepFreeGuestOption.click();
+//        grabBar.click();
+        parking.click();
+    }
+
+    public void clickOnLanguage() {
+        hostLanguage.click();
+        hostLanguageSelect.click();
+    }
+
+    public void clickOnShow() {
+        show.click();
     }
 }

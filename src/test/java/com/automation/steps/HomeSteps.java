@@ -201,18 +201,38 @@ public class HomeSteps {
         homePage.clickOnNewCurrency();
     }
 
-    @And("user selects {string} in Amenities")
-    public void userSelectsInAmenities() {
-        homePage.clickOnWifi();
-    }
-
-    @And("user selects {string} in Booking options")
-    public void userSelectsInBookingOptions() {
-        homePage.clickOnInstantBook();
-    }
-
     @And("user selects guest favourites in Top-tier stays")
     public void userSelectsGuestFavouritesInTopTierStays() {
         homePage.clickOnFavourite();
+    }
+
+    @And("user selects Wifi in Amenities")
+    public void userSelectsWifiInAmenities() {
+        homePage.clickOnWifi();
+    }
+
+    @And("user selects Instant Book in Booking options")
+    public void userSelectsInstantBookInBookingOptions() {
+        homePage.clickOnInstantBook();
+    }
+
+    @And("user selects Hotel Property type")
+    public void userSelectsHotelPropertyType() {
+        homePage.clickOnHotel();
+    }
+
+    @And("user selects filter by Accessibility features")
+    public void userSelectsFilterByAccessibilityFeatures() {
+        homePage.clickOnAccessibility();
+    }
+
+    @And("user selects language English in filter")
+    public void userSelectsLanguageEnglishInFilter() {
+        homePage.clickOnLanguage();
+    }
+
+    @Then("user clicks on show")
+    public void userClicksOnShow() {
+        homePage.clickOnShow();
     }
 }
