@@ -154,7 +154,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[text()='MYR – RM']")
     WebElement newCurrency;
 
-    @FindBy(xpath = "//span[text()='Choose a currency']")
+    @FindBy(xpath = "//span[text()='Choose a currency']//descendant-or-self::span")
     WebElement currencyVerification;
 
 
