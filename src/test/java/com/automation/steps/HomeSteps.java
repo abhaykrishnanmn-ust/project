@@ -201,4 +201,18 @@ public class HomeSteps {
         homePage.clickOnNewCurrency();
     }
 
+    @And("user selects {string} in Amenities")
+    public void userSelectsInAmenities() {
+        homePage.clickOnWifi();
+    }
+
+    @And("user selects {string} in Booking options")
+    public void userSelectsInBookingOptions() {
+        homePage.clickOnInstantBook();
+    }
+
+    @And("user selects guest favourites in Top-tier stays")
+    public void userSelectsGuestFavouritesInTopTierStays() {
+        homePage.clickOnFavourite();
+    }
 }

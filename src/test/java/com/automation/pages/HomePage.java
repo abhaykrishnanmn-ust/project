@@ -157,6 +157,11 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//span[text()='Choose a currency']//descendant-or-self::span")
     WebElement currencyVerification;
 
+    @FindBy(xpath = "//button[@id='filter-item-amenities-4']")
+    WebElement wifi;
+
+    @FindBy(xpath = "//button[@id='filter-item-ib']")
+    WebElement instantBook;
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -372,4 +377,15 @@ public class HomePage extends BasePage {
     }
 
 
+    public void clickOnWifi() {
+        wifi.click();
+    }
+
+    public void clickOnInstantBook() {
+        instantBook.click();
+    }
+
+    public void clickOnFavourite() {
+
+    }
 }
