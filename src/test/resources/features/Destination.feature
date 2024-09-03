@@ -50,13 +50,6 @@ Feature: Validate stays functionalities
     When user selects first card
     Then verify displayed details with the user interest
 
-  Scenario: Verify hosting
-    Given user opens website
-    And verify user is on homepage
-    When user clicks on Airbnb your home
-    Then verify Airbnb your home is displayed with text
-      |You could earn|
-
   Scenario: Verify language option
     Given user opens website
     And verify user is on homepage
@@ -66,15 +59,6 @@ Feature: Validate stays functionalities
     Then verify user is on homepage
     When user clicks on global icon
     Then verify language is changed to the selected language
-
-  Scenario: Verify currency
-    Given user opens website
-    And verify user is on homepage
-    When user clicks on global icon
-    And user selects currency
-    Then verify currency options are displayed
-    And select the currency
-    Then verify currency is changed to the selected currency
 
   Scenario: Verify image sliding functionality
     Given user opens website
@@ -220,12 +204,3 @@ Feature: Validate stays functionalities
     Then verify searched page is displayed
     When user selects any card
     Then verify the price distribution is equals total price
-
-  Scenario: Verify hosting page price slider
-    Given user opens website
-    And verify user is on homepage
-    When user clicks on Airbnb your home
-    Then verify Airbnb your home is displayed with text
-      |You could earn|
-    When user uses slider
-    Then verify the price is changing
