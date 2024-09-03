@@ -201,6 +201,11 @@ public class HomeSteps {
         homePage.clickOnNewCurrency();
     }
 
+    @Then("verify currency is changed to the selected currency")
+    public void verify_currency_is_changed_to_the_selected_currency() {
+        Assert.assertTrue(homePage.verifyCurrency());
+    }
+
     @And("user selects guest favourites in Top-tier stays")
     public void userSelectsGuestFavouritesInTopTierStays() {
         homePage.clickOnFavourite();

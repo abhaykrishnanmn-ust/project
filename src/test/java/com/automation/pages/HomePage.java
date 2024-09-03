@@ -1,7 +1,6 @@
 package com.automation.pages;
 
 import com.automation.utils.ConfigReader;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -151,7 +150,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//h2[@elementtiming='LCP-target']")
     WebElement currencyOptions;
 
-    @FindBy(xpath = "//div[text()='MYR – RM']")
+    @FindBy(xpath = "//div[text()='SAR – SR']")
     WebElement newCurrency;
 
     @FindBy(xpath = "//span[text()='Choose a currency']//descendant-or-self::span")
@@ -192,6 +191,9 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[@class='ptiimno atm_7l_1p8m8iw dir dir-ltr']")
     WebElement show;
+
+    @FindBy(xpath = "//div[@class='_3qymq']/preceding-sibling::div//span[2]/button/span[3]")
+    WebElement currencyDisplayedOnFooter;
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -403,6 +405,7 @@ public class HomePage extends BasePage {
     }
 
     public void clickOnNewCurrency() {
+        ConfigReader.setValue("new.currency",newCurrency.getText());
         newCurrency.click();
     }
 
@@ -438,5 +441,12 @@ public class HomePage extends BasePage {
 
     public void clickOnShow() {
         show.click();
+    }
+
+    public boolean verifyCurrency() {
+        scrollThePage(currencyDisplayedOnFooter);
+//        System.out.println(ConfigReader.getValue("new.currency"));
+//        System.out.println(currencyDisplayedOnFooter.getText());
+        return ConfigReader.getValue("new.currency").contains(currencyDisplayedOnFooter.getText());
     }
 }
