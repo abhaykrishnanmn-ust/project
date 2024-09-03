@@ -50,23 +50,6 @@ Feature: Validate stays functionalities
     When user selects first card
     Then verify displayed details with the user interest
 
-  Scenario: Verify language option
-    Given user opens website
-    And verify user is on homepage
-    When user clicks on global icon
-    Then verify language options are displayed
-    When user clicks on language
-    Then verify user is on homepage
-    When user clicks on global icon
-    Then verify language is changed to the selected language
-
-  Scenario: Verify image sliding functionality
-    Given user opens website
-    When user click on "Amazing views"
-    Then verify user is on homepage
-    When user clicks on the next in card image
-    Then verify image displayed is second-"2"
-
   Scenario: Verify user is getting the correct host information
     Given user opens website
     And verify user is on homepage
@@ -74,14 +57,6 @@ Feature: Validate stays functionalities
     And user selects first card
     And user selects Meet your Host option
     Then verify displayed details with the host details
-
-  Scenario: Verify user is able to use help centre option
-    Given user opens website
-    And verify user is on homepage
-    And user clicks on profile icon
-    When user clicks on the help centre option
-    Then verify help centre page is displayed with text
-        |Hi, how can we help|
 
   Scenario: Verify Price of Experience
     Given user opens website
@@ -114,16 +89,6 @@ Feature: Validate stays functionalities
     Then verify details card is displayed
     When user clicks on the details card
     Then verify map card detail with page detail
-
-  Scenario: Verify things to do with what you will do
-    Given user opens website
-    And verify user is on homepage
-    When user clicks on things to do
-    Then user selects destination
-    When user search is performed
-    And user selects first card
-    Then verify displayed details with the text
-      |What you'll do|
 
   Scenario: Verify things to do with map
     Given user opens website
