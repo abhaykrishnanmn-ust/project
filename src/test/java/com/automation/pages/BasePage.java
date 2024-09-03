@@ -25,6 +25,7 @@ abstract class BasePage {
         driver = DriverManager.getDriver();
         PageFactory.initElements(driver, this);
         actions = new Actions(driver);
+        js=(JavascriptExecutor)driver;
     }
 
     public void switchToNewWindow() {
