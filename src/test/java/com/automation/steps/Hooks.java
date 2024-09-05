@@ -21,6 +21,6 @@ public class Hooks {
         if (scenario.isFailed()) {
             ReportManager.attachScreenShot();
         }
-        DriverManager.getDriver().quit();
+//        DriverManager.getDriver().quit();
     }
 }

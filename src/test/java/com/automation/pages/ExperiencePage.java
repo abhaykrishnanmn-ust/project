@@ -29,7 +29,7 @@ public class ExperiencePage extends BasePage {
     @FindBy(xpath = "//h1")
     WebElement cardPageOnSimilarExperiences;
 
-    @FindBy(className = "_1athds8")
+    @FindBy(xpath = "//div[@data-testid=\"experiences-change-dates\"]//button")
     WebElement clickOnDateSection;
 
     @FindBy(xpath = "//h3[text()='September 2024']/ancestor::div/table//tr/td[contains(@aria-label,'21')]")
@@ -51,7 +51,7 @@ public class ExperiencePage extends BasePage {
     public void selectFirstCardOnExperiencePage() {
         javaScriptExecutorClick(firstCardOnExperiencePage);
         switchToNewWindow();
-        if(isPresent(closeTranslate)){
+        if(isPresents(closeTranslate)){
             javaScriptExecutorClick(closeTranslate);
         }
     }
@@ -61,7 +61,7 @@ public class ExperiencePage extends BasePage {
     }
 
     public boolean verifyDatesOnExperience() {
-        closeTranslate.click();
+//        closeTranslate.click();
         isPresent(fetchExperienceDates);
         String experienceDatesFetched = fetchExperienceDates.getText();
         String a = ConfigReader.getValue("experiences.dates").replace("Sep", "-");
@@ -93,6 +93,7 @@ public class ExperiencePage extends BasePage {
     }
 
     public void clickOnExperiencePageDate() {
+        scrollThePage(clickOnDateSection);
         clickOnDateSection.click();
     }
 

@@ -30,7 +30,7 @@ public class MapSteps {
 
     @Then("verify map card detail with page detail")
     public void verify_map_card_detail_with_page_detail() {
-        mapPage.verifyMapCardDetails();
+        Assert.assertTrue(mapPage.verifyMapCardDetails());
     }
 
     @And("user selects map options")
