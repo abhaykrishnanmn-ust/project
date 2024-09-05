@@ -37,7 +37,7 @@ public class ExperienceSteps {
 
     @Then("verify displayed details with the details on card")
     public void verify_displayed_details_with_the_details_on_card() {
-        experiencePage.verifySimilarCardDetails();
+        Assert.assertTrue(experiencePage.verifySimilarCardDetails());
     }
 
     @And("user click on dates")

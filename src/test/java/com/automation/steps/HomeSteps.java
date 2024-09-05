@@ -119,7 +119,7 @@ public class HomeSteps {
 
     @Then("verify displayed details with the host details")
     public void verify_displayed_details_with_the_host_details() {
-        homePage.verifyDisplayedDetailsOfHost();
+        Assert.assertTrue(homePage.verifyDisplayedDetailsOfHost());
     }
 
     @And("user clicks on profile icon")

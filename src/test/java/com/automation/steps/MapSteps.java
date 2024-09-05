@@ -1,10 +1,10 @@
 package com.automation.steps;
 
 import com.automation.pages.MapPage;
-import com.automation.utils.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class MapSteps {
     MapPage mapPage=new MapPage();
@@ -37,4 +37,11 @@ public class MapSteps {
     public void userSelectsMapOptions() {
         mapPage.clickOnMapOption();
     }
+
+    @Then("verify content as what you will do is present with same price in map")
+    public void verify_content_as_what_you_will_do_is_present_with_same_price_in_map() {
+        Assert.assertTrue(mapPage.verifyMapContent());
+    }
+
+
 }

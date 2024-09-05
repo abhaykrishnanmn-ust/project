@@ -126,7 +126,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[@role='img']")
     WebElement slideImageElement;
 
-    @FindBy(xpath = "//span[@class='_1lsdkkh']")
+    @FindBy(xpath = "//span[@class='_1w7bwz8']")
     WebElement totalPriceBeforePageIsDisplayed;
 
     @FindBy(xpath = "//button[@aria-label='Minimum Price']")
@@ -194,6 +194,12 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[@class='_3qymq']/preceding-sibling::div//span[2]/button/span[3]")
     WebElement currencyDisplayedOnFooter;
+
+    @FindBy(xpath = "//div[@data-section-id=\"MEET_YOUR_HOST\"]//h3//span")
+    WebElement meetYourHostName;
+
+    @FindBy(xpath = "//div[@data-testid=\"user-profile-content\"]//span")
+    WebElement aboutMeetYourHost;
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -309,11 +315,14 @@ public class HomePage extends BasePage {
     }
 
     public void selectMeetYourHost() {
+
         scrollThePage(messageHostButton);
+        ConfigReader.setValue("meet.your.host.name",meetYourHostName.getText());
         hostProfileCard.click();
     }
 
-    public void verifyDisplayedDetailsOfHost() {
+    public boolean verifyDisplayedDetailsOfHost() {
+        return aboutMeetYourHost.getText().contains(ConfigReader.getValue("meet.your.host.name"));
     }
 
     public void profileIconSelection() {
@@ -363,6 +372,7 @@ public class HomePage extends BasePage {
 
     public boolean isTotalPriceBeforePageIsDisplayed() {
         totalPriceBeforePageIsDisplayed.isDisplayed();
+        System.out.println(totalPriceBeforePageIsDisplayed.getText());
         return totalPriceBeforePageIsDisplayed.getText().contains("total before taxes");
     }
 

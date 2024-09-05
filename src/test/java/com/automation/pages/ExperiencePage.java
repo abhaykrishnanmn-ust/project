@@ -1,11 +1,8 @@
 package com.automation.pages;
 
 import com.automation.utils.ConfigReader;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import java.util.Set;
 
 public class ExperiencePage extends BasePage {
     @FindBy(xpath = "//div[@data-testid='listing-card-title']/parent::div/a")
@@ -23,8 +20,14 @@ public class ExperiencePage extends BasePage {
     @FindBy(xpath = "//span[@class='f1w1jwjs atm_cs_1p3l1rs dir dir-ltr']")
     WebElement similarSearchContent;
 
-    @FindBy(xpath = "//div[@data-testid='experience-card']/a")
+    @FindBy(xpath = "//div[@data-testid='experience-card']")
     WebElement cardOnSimilarExperiences;
+
+    @FindBy(xpath = "//div[@data-section-id=\"OVERVIEW_DEFAULT\"]//h2")
+    WebElement cardOnSimilarExperiencesText;
+
+    @FindBy(xpath = "//h1")
+    WebElement cardPageOnSimilarExperiences;
 
     @FindBy(className = "_1athds8")
     WebElement clickOnDateSection;
@@ -48,6 +51,7 @@ public class ExperiencePage extends BasePage {
     public void selectFirstCardOnExperiencePage() {
         javaScriptExecutorClick(firstCardOnExperiencePage);
         switchToNewWindow();
+        closeTranslate.click();
     }
 
     public void verifyDetailsOnExperience() {
@@ -76,10 +80,14 @@ public class ExperiencePage extends BasePage {
     }
 
     public void clickOnCardOfSimilarSearches() {
+//        ConfigReader.setValue("cards.on.similar.experiences.text",cardOnSimilarExperiencesText.getText());
+        cardOnSimilarExperiences.isDisplayed();
         cardOnSimilarExperiences.click();
+        switchToNewWindow();
     }
 
-    public void verifySimilarCardDetails() {
+    public boolean verifySimilarCardDetails() {
+        return cardPageOnSimilarExperiences.getText().contains(ConfigReader.getValue("cards.on.similar.experiences.text"));
     }
 
     public void clickOnExperiencePageDate() {

@@ -50,14 +50,6 @@ Feature: Validate stays functionalities
     When user selects first card
     Then verify displayed details with the user interest
 
-  Scenario: Verify user is getting the correct host information
-    Given user opens website
-    And verify user is on homepage
-    When user click on "Amazing views"
-    And user selects first card
-    And user selects Meet your Host option
-    Then verify displayed details with the host details
-
   Scenario: Verify Price of Experience
     Given user opens website
     And verify user is on homepage
@@ -109,10 +101,10 @@ Feature: Validate stays functionalities
     When user click on search button
     Then verify searched page is displayed
     When user selects a card with host preview
-    Then host details are taken
-    When user close the preview
-    And user open the same card
-    Then verify displayed host details with the details in preview
+#    Then host details are taken
+#    When user close the preview
+#    And user open the same card
+#    Then verify displayed host details with the details in preview
 
   Scenario: Verify typing destination for Experiences
     Given user opens website

@@ -1,10 +1,8 @@
 package com.automation.pages;
 
 import com.automation.utils.ConfigReader;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import java.util.Set;
 
 public class BookingPage extends BasePage {
     @FindBy(xpath = "//div[@itemprop='itemListElement']")
@@ -36,9 +34,9 @@ public class BookingPage extends BasePage {
     }
 
     public void clickOnFirstCard() {
-        switchToNewWindow();
         clickOnCard.click();
-
+        switchToNewWindow();
+        closeTranslate.click();
     }
 
     public boolean verifyCheckInDate() {
