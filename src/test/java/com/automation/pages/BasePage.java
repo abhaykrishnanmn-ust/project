@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import com.automation.utils.ConfigReader;
 import com.automation.utils.DriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -27,9 +28,14 @@ abstract class BasePage {
         actions = new Actions(driver);
         js=(JavascriptExecutor)driver;
     }
+    public void switchToCurrentWindow(){
+        String window =ConfigReader.getValue("window");
+        driver.switchTo().window(window);
+    }
 
     public void switchToNewWindow() {
         String window = driver.getWindowHandle();
+        ConfigReader.setValue("window",window);
         Set<String> windowHandles = driver.getWindowHandles();
         for (String windows : windowHandles) {
             if (!windows.equals(window)) {

@@ -4,6 +4,7 @@ import com.automation.pages.HostPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class HostSteps {
     HostPage hostPage=new HostPage();
@@ -25,5 +26,10 @@ public class HostSteps {
     @And("user open the same card")
     public void userOpenTheSameCard() {
         hostPage.openCardWithPreview();
+    }
+
+    @Then("verify displayed host details with the details in preview")
+    public void verify_displayed_host_details_with_the_details_in_preview() {
+        Assert.assertTrue(hostPage.verifyHostNameOnPreview());
     }
 }

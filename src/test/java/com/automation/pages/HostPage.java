@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import com.automation.utils.ConfigReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -17,19 +18,34 @@ public class HostPage extends BasePage{
     @FindBy(xpath = "//button[@aria-label='Close']")
     WebElement closeHostDetailsButton;
 
-    @FindBy(xpath = "//img[@fetchpriority='high']")
+    @FindBy(xpath = "//button[@aria-label='Host preview']/ancestor::div[@data-testid=\"card-container\"]")
     WebElement openCardWithPreview;
+
+    @FindBy(xpath = "//button[@aria-label='Close']")
+    WebElement closeTranslate;
+
+    @FindBy(xpath = "//div[@data-section-id=\"HOST_OVERVIEW_DEFAULT\"]/div/div/div/div[2]/div")
+    WebElement hostDetailsOnCardPage;
+
+    @FindBy(xpath = "//a[@aria-label=\"Next\"]")
+    WebElement nextPageButton;
 
 
     public void clicksOnHostPreview() {
+        if(!isPresents(hostPreview)){
+            scrollThePage(nextPageButton);
+            javaScriptExecutorClick(nextPageButton);
+//            nextPageButton.click();
+        }
         hostPreview.click();
     }
 
     public void getsHostDetails() {
         hostDetails.click();
         switchToNewWindow();
-        javaExecutorGetText(hostName);
-
+        ConfigReader.setValue("host.name.on.preview",javaExecutorGetText(hostName));
+        driver.close();
+        switchToCurrentWindow();
     }
 
     public void closeHostDetails() {
@@ -38,7 +54,16 @@ public class HostPage extends BasePage{
     }
 
     public void openCardWithPreview() {
+        scrollThePage(openCardWithPreview);
         openCardWithPreview.click();
+        switchToNewWindow();
+        closeTranslate.click();
+    }
 
+    public boolean verifyHostNameOnPreview() {
+        scrollThePage(hostDetailsOnCardPage);
+        System.out.println("==="+javaExecutorGetText(hostDetailsOnCardPage));
+        System.out.println("==="+ConfigReader.getValue("host.name.on.preview"));
+        return javaExecutorGetText(hostDetailsOnCardPage).contains(ConfigReader.getValue("host.name.on.preview"));
     }
 }

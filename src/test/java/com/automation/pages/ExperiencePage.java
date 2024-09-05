@@ -54,6 +54,7 @@ public class ExperiencePage extends BasePage {
         if(isPresents(closeTranslate)){
             javaScriptExecutorClick(closeTranslate);
         }
+        ConfigReader.setValue("map.card.details.on.experiences",fetchExperienceDates.getText());
     }
 
     public void verifyDetailsOnExperience() {
@@ -107,7 +108,10 @@ public class ExperiencePage extends BasePage {
         javaScriptExecutorClick(saveNewDatesButton);
     }
 
-    public void verifyNewDates() {
+    public boolean verifyNewDates() {
+        System.out.println(ConfigReader.getValue("map.card.details.on.experiences"));
+        System.out.println(fetchExperienceDates.getText());
+        return ConfigReader.getValue("map.card.details.on.experiences").contains(fetchExperienceDates.getText());
     }
 
     public void verifyPrice() {

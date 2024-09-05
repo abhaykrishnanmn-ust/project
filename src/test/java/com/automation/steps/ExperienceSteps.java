@@ -57,7 +57,7 @@ public class ExperienceSteps {
 
     @Then("verify displayed dates are different from previous dates")
     public void verifyDisplayedDatesAreDifferentFromPreviousDates() {
-        experiencePage.verifyNewDates();
+        Assert.assertFalse(experiencePage.verifyNewDates());
     }
 
     @And("get price and total price")
