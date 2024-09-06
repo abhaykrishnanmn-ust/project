@@ -2,6 +2,7 @@ package com.automation.steps;
 
 import com.automation.pages.HomePage;
 import com.automation.utils.ConfigReader;
+import com.automation.utils.ReportManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,6 +20,7 @@ public class HomeSteps {
     @Then("verify user is on homepage")
     public void verify_user_is_on_homepage() {
         Assert.assertTrue(homePage.isHomePageDisplayed());
+        ReportManager.attachScreenShot();
     }
 
     @When("user clicks on where")
@@ -28,7 +30,6 @@ public class HomeSteps {
 
     @Then("user selects destination by {string}")
     public void user_selects_destination_by(String region) {
-
         homePage.selectRegion(ConfigReader.getValue(region));
     }
 
@@ -57,6 +58,7 @@ public class HomeSteps {
     public void selectDates() {
         homePage.selectDatesOfExperiences();
     }
+
     @When("user clicks on global icon")
     public void user_clicks_on_global_icon() {
         homePage.clickOnGlobalIcon();
@@ -65,6 +67,7 @@ public class HomeSteps {
     @Then("verify language options are displayed")
     public void verify_language_options_are_displayed() {
         Assert.assertTrue(homePage.verifyLanguageIsDisplayed());
+        ReportManager.attachScreenShot();
     }
 
     @When("user clicks on language")
@@ -75,6 +78,7 @@ public class HomeSteps {
     @Then("verify language is changed to the selected language")
     public void verify_language_is_changed_to_the_selected_language() {
         Assert.assertTrue(homePage.verifyLanguageIsChanged());
+        ReportManager.attachScreenShot();
     }
 
     @Then("user types location {string} in the search destination field")
@@ -120,6 +124,7 @@ public class HomeSteps {
     @Then("verify displayed details with the host details")
     public void verify_displayed_details_with_the_host_details() {
         Assert.assertTrue(homePage.verifyDisplayedDetailsOfHost());
+        ReportManager.attachScreenShot();
     }
 
     @And("user clicks on profile icon")
@@ -161,6 +166,7 @@ public class HomeSteps {
     @Then("verify displayed details with the text")
     public void verifyDisplayedDetailsWithTheText(String message) {
         Assert.assertTrue(homePage.verifyThingsToDoMessage(message));
+        ReportManager.attachScreenShot();
     }
 
     @When("user clicks on the next in card image")
@@ -171,11 +177,13 @@ public class HomeSteps {
     @Then("verify image displayed is second-{string}")
     public void verifyImageDisplayedIsSecond(String page) {
         Assert.assertTrue(homePage.verifySlidingImage(page));
+        ReportManager.attachScreenShot();
     }
 
     @Then("verify total before price is displayed in the page")
     public void verifyTotalBeforePriceIsDisplayedInThePage() {
         Assert.assertTrue(homePage.isTotalPriceBeforePageIsDisplayed());
+        ReportManager.attachScreenShot();
     }
 
     @And("user enters minimum price {string} and maximum price {string}")
@@ -204,6 +212,7 @@ public class HomeSteps {
     @Then("verify currency is changed to the selected currency")
     public void verify_currency_is_changed_to_the_selected_currency() {
         Assert.assertTrue(homePage.verifyCurrency());
+        ReportManager.attachScreenShot();
     }
 
     @And("user selects guest favourites in Top-tier stays")

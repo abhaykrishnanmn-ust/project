@@ -1,13 +1,15 @@
 package com.automation.steps;
 
 import com.automation.pages.MapPage;
+import com.automation.utils.ReportManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class MapSteps {
-    MapPage mapPage=new MapPage();
+    MapPage mapPage = new MapPage();
+
     @Then("verify map page is displayed")
     public void verify_map_page_is_displayed() {
         mapPage.verifyMapPageIsDisplayed();
@@ -31,6 +33,7 @@ public class MapSteps {
     @Then("verify map card detail with page detail")
     public void verify_map_card_detail_with_page_detail() {
         Assert.assertTrue(mapPage.verifyMapCardDetails());
+        ReportManager.attachScreenShot();
     }
 
     @And("user selects map options")
@@ -41,7 +44,7 @@ public class MapSteps {
     @Then("verify content as what you will do is present with same price in map")
     public void verify_content_as_what_you_will_do_is_present_with_same_price_in_map() {
         Assert.assertTrue(mapPage.verifyMapContent());
+        ReportManager.attachScreenShot();
     }
-
 
 }

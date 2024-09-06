@@ -1,16 +1,19 @@
 package com.automation.steps;
 
 import com.automation.pages.ExperiencePage;
+import com.automation.utils.ReportManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class ExperienceSteps {
-    ExperiencePage experiencePage=new ExperiencePage();
+    ExperiencePage experiencePage = new ExperiencePage();
+
     @Then("verify experience page is displayed")
     public void verifyExperiencePageIsDisplayed() {
         Assert.assertTrue(experiencePage.isExperiencePageDisplayed());
+        ReportManager.attachScreenShot();
     }
 
     @When("user selects first card on experience page")
@@ -22,7 +25,9 @@ public class ExperienceSteps {
     public void verifyDisplayedDetailsOnExperiencePageWithTheInputDetails() {
         experiencePage.verifyDetailsOnExperience();
         Assert.assertTrue(experiencePage.verifyDatesOnExperience());
+        ReportManager.attachScreenShot();
         Assert.assertTrue(experiencePage.verifyNoOfPeople());
+        ReportManager.attachScreenShot();
     }
 
     @Then("user scrolls through the page till similar experiences")
@@ -38,6 +43,7 @@ public class ExperienceSteps {
     @Then("verify displayed details with the details on card")
     public void verify_displayed_details_with_the_details_on_card() {
         Assert.assertTrue(experiencePage.verifySimilarCardDetails());
+        ReportManager.attachScreenShot();
     }
 
     @And("user click on dates")
@@ -58,6 +64,7 @@ public class ExperienceSteps {
     @Then("verify displayed dates are different from previous dates")
     public void verifyDisplayedDatesAreDifferentFromPreviousDates() {
         Assert.assertFalse(experiencePage.verifyNewDates());
+        ReportManager.attachScreenShot();
     }
 
     @And("get price and total price")
