@@ -1,4 +1,5 @@
 Feature: Validating meet your host feature
+
   Scenario: Verify user is getting the correct host information
     Given user opens website
     And verify user is on homepage
