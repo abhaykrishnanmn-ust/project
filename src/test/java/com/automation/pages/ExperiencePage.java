@@ -41,9 +41,6 @@ public class ExperiencePage extends BasePage {
     @FindBy(xpath = "//button[text()='Save']")
     WebElement saveNewDatesButton;
 
-    @FindBy(xpath = "//span[@class='n6k4iv6 atm_cs_4ye29u dir dir-ltr']")
-    WebElement price;
-
     public boolean isExperiencePageDisplayed() {
         return firstCardOnExperiencePage.isDisplayed();
     }
@@ -112,10 +109,5 @@ public class ExperiencePage extends BasePage {
         System.out.println(ConfigReader.getValue("map.card.details.on.experiences"));
         System.out.println(fetchExperienceDates.getText());
         return ConfigReader.getValue("map.card.details.on.experiences").contains(fetchExperienceDates.getText());
-    }
-
-    public void verifyPrice() {
-        price.getText();
-        System.out.println(price.getText());
     }
 }

@@ -42,7 +42,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[text()='Add guests']/parent::div")
     WebElement clickOnAddGuest;
 
-    @FindBy(xpath = "//h1[@id='searchFlow-title-label-adults']/ancestor::section/following-sibling::div/button[2]")
+    @FindBy(xpath = "//button[@data-testid=\"stepper-adults-increase-button\"]")
     WebElement addAdults;
 
     @FindBy(xpath = "//div[text()='Who']/following-sibling::div")
@@ -200,6 +200,18 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[@data-testid=\"user-profile-content\"]//span")
     WebElement aboutMeetYourHost;
+
+    @FindBy(xpath = "//div[@data-section-id='GUEST_FAVORITE_BANNER']")
+    WebElement cardPageGuestFavourite;
+
+    @FindBy(xpath = "//li[contains(text(),'bedrooms')]")
+    WebElement bedroomCount;
+
+    @FindBy(xpath = "//div[@data-section-id='BOOK_IT_SIDEBAR']//span/div/following-sibling::span")
+    WebElement cardPageFilterPrice;
+
+    @FindBy(xpath = "//li[contains(text(),'beds')]")
+    WebElement bedCount;
 
     public void openWebsite() {
         driver.navigate().to(ConfigReader.getValue("url"));
@@ -386,12 +398,14 @@ public class HomePage extends BasePage {
     }
 
     public void enterFilterMinimumPrice(String min){
+        filterMaximumPriceInput.isDisplayed();
         filterMinimumPriceInput.click();
         javaScriptClear(filterMinimumPriceInput);
         filterMinimumPriceInput.sendKeys(min);
     }
 
     public void enterFilterMaximumPrice(String max) {
+//        filterMaximumPriceInput.isDisplayed();
         filterMaximumPriceInput.click();
         javaScriptClear(filterMaximumPriceInput);
         filterMaximumPriceInput.sendKeys(max);
@@ -458,5 +472,27 @@ public class HomePage extends BasePage {
 //        System.out.println(ConfigReader.getValue("new.currency"));
 //        System.out.println(currencyDisplayedOnFooter.getText());
         return ConfigReader.getValue("new.currency").contains(currencyDisplayedOnFooter.getText());
+    }
+
+    public boolean verifyGuestFavourite() {
+        return cardPageGuestFavourite.isDisplayed();
+    }
+
+    public boolean verifyFilterBedroomCount() {
+        int pageBedroomCount=Integer.parseInt(bedroomCount.getText().substring(3,4));
+        int passedBedroomCount=Integer.parseInt(ConfigReader.getValue("filter.bedroom.count"));
+        return pageBedroomCount>passedBedroomCount;
+    }
+
+    public boolean verifyFilterBedCount() {
+        int pageBedCount=Integer.parseInt(bedCount.getText().substring(3,4));
+        int passedBedCount=Integer.parseInt(ConfigReader.getValue("filter.bed.count"));
+        return pageBedCount>passedBedCount;
+    }
+
+    public boolean verifyFilterPrice() {
+        return Integer.parseInt(cardPageFilterPrice.getText().split(" ")[0].substring(1).
+                replace(",",""))<=
+                Integer.parseInt(ConfigReader.getValue("filter.maximum.price"));
     }
 }

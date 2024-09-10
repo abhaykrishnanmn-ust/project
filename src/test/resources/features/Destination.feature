@@ -32,19 +32,17 @@ Feature: Validate stays functionalities
     Then user selects first card
     Then verify farm description contains "farm" in it
 
-  Scenario: Verify Price of Experience
+  Scenario: Verify Price of stays
     Given user opens website
     And verify user is on homepage
-    When user clicks on experiences
-    And user clicks on where
+    When user clicks on where
     Then user selects destination by "region"
-    And select dates
+    And select check in and check out date
     And select number of people
     When user click on search button
-    Then verify experience page is displayed
-    When user selects first card on experience page
-    And get price and total price
-    Then verify price is displayed correctly
+    Then verify searched page is displayed
+    When user selects first card
+    Then verify price and total price is displayed correctly
 
   Scenario: Verify before tax price button
     Given user opens website

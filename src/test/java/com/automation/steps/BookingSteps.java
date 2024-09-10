@@ -42,4 +42,8 @@ public class BookingSteps {
         bookingPage.verifyPrice();
     }
 
+    @Then("verify price and total price is displayed correctly")
+    public void verifyPriceAndTotalPriceIsDisplayedCorrectly() {
+        Assert.assertTrue(bookingPage.verifyTotalPrice());
+    }
 }

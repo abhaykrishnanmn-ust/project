@@ -4,6 +4,8 @@ import com.automation.utils.ConfigReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class BookingPage extends BasePage {
     @FindBy(xpath = "//div[@itemprop='itemListElement']")
     WebElement clickOnCard;
@@ -28,6 +30,15 @@ public class BookingPage extends BasePage {
 
     @FindBy(xpath = "//div[text()='Total before taxes']/parent::span/following-sibling::span//span[@class='_j1kt73']")
     WebElement totalPrice;
+
+    @FindBy(xpath = "//div[@data-testid='book-it-default']/following-sibling::div[2]//div[text() and not(contains(text(),'Total'))]/ancestor::div/span/following-sibling::span")
+    List<WebElement> priceList;
+
+    @FindBy(xpath = "//div[contains(text(),'Total before taxes')]/parent::span/following-sibling::span//span[text()]")
+    WebElement totalPriceInCardPage;
+
+    @FindBy(xpath = "//button[text()='Clear dates']")
+    WebElement clearDates;
 
     public boolean isSearchedPageIsDisplayed() {
         return true;
@@ -71,5 +82,14 @@ public class BookingPage extends BasePage {
         String displayPrice= price.getText();
         String displayTotalPrice= totalPrice.getText();
         System.out.println(displayPrice+"==="+displayTotalPrice);
+    }
+
+    public Boolean verifyTotalPrice() {
+        scrollTillElement(clearDates);
+        int totalPrice=0;
+        for (WebElement price:priceList){
+            totalPrice=totalPrice+Integer.parseInt(price.getText().substring(1).replace(",",""));
+        }
+        return totalPrice==Integer.parseInt(totalPriceInCardPage.getText().substring(1).replace(",",""));
     }
 }

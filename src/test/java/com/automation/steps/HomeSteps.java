@@ -189,14 +189,14 @@ public class HomeSteps {
     @And("user enters minimum price {string} and maximum price {string}")
     public void userEntersMinimumPriceAndMaximumPrice(String min, String max) throws InterruptedException {
 //        homePage.enterFilterMinimumPrice(min);
-        homePage.enterFilterMaximumPrice(max);
-        homePage.enterFilterMinimumPrice(min);
+        homePage.enterFilterMaximumPrice(ConfigReader.getValue("filter.maximum.price"));
+        homePage.enterFilterMinimumPrice(ConfigReader.getValue("filter.minimum.price"));
     }
 
     @And("user selects {string} bedrooms and {string} beds")
     public void userSelectsBedroomsAndBeds(String bedroomsCount, String bedsCount) {
-        homePage.increaseBedroomCount(Integer.parseInt(bedroomsCount));
-        homePage.increaseBedCount(Integer.parseInt(bedsCount));
+        homePage.increaseBedroomCount(Integer.parseInt(ConfigReader.getValue(bedroomsCount)));
+        homePage.increaseBedCount(Integer.parseInt(ConfigReader.getValue(bedsCount)));
     }
 
     @Then("verify currency options are displayed")
@@ -248,5 +248,13 @@ public class HomeSteps {
     @Then("user clicks on show")
     public void userClicksOnShow() {
         homePage.clickOnShow();
+    }
+
+    @Then("verify displayed details with the user interest")
+    public void verifyDisplayedDetailsWithTheUserInterest() {
+        Assert.assertTrue(homePage.verifyGuestFavourite());
+        Assert.assertTrue(homePage.verifyFilterBedroomCount());
+        Assert.assertTrue(homePage.verifyFilterBedCount());
+        Assert.assertTrue(homePage.verifyFilterPrice());
     }
 }

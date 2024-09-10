@@ -5,8 +5,8 @@ Feature: Validate Filter Functionality
     When user click on "farm"
     When user clicks on filter
     Then user selects filter by Entire home
-    And user enters minimum price "1000" and maximum price "10000"
-    And user selects "2" bedrooms and "2" beds
+    And user enters minimum price "filter.minimum.price" and maximum price "filter.maximum.price"
+    And user selects "filter.bedroom.count" bedrooms and "filter.bed.count" beds
     And user selects Wifi in Amenities
     And user selects Instant Book in Booking options
     And user selects guest favourites in Top-tier stays

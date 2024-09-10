@@ -66,9 +66,4 @@ public class ExperienceSteps {
         Assert.assertFalse(experiencePage.verifyNewDates());
         ReportManager.attachScreenShot();
     }
-
-    @And("get price and total price")
-    public void getPriceAndTotalPrice() {
-        experiencePage.verifyPrice();
-    }
 }
