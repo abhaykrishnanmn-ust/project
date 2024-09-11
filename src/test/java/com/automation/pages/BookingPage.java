@@ -45,7 +45,7 @@ public class BookingPage extends BasePage {
     }
 
     public void clickOnFirstCard() {
-        clickOnCard.click();
+        javaScriptExecutorClick(clickOnCard);
         switchToNewWindow();
         if(isPresents(closeTranslate)){
             javaScriptExecutorClick(closeTranslate);

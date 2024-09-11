@@ -1,4 +1,5 @@
 Feature: Validating things to do feature
+
   Scenario: Verify things to do with what you will do
     Given user opens website
     And verify user is on homepage
@@ -7,4 +8,4 @@ Feature: Validating things to do feature
     When user search is performed
     And user selects first card
     Then verify displayed details with the text
-      |What you'll do|
+      | What you'll do |
