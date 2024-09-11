@@ -57,7 +57,9 @@ public class HostPage extends BasePage{
         scrollThePage(openCardWithPreview);
         openCardWithPreview.click();
         switchToNewWindow();
-        closeTranslate.click();
+        if(isPresents(closeTranslate)){
+            javaScriptExecutorClick(closeTranslate);
+        }
     }
 
     public boolean verifyHostNameOnPreview() {

@@ -47,12 +47,16 @@ public class BookingPage extends BasePage {
     public void clickOnFirstCard() {
         clickOnCard.click();
         switchToNewWindow();
-        closeTranslate.click();
+        if(isPresents(closeTranslate)){
+            javaScriptExecutorClick(closeTranslate);
+        }
     }
 
     public boolean verifyCheckInDate() {
         switchToNewWindow();
-        closeTranslate.click();
+        if(isPresents(closeTranslate)){
+            javaScriptExecutorClick(closeTranslate);
+        }
         isPresent(fetchCheckInDate);
         String checkInDataFetched = fetchCheckInDate.getText();
         System.out.println(checkInDataFetched + "=====" + ConfigReader.getValue("check.in.date"));
@@ -78,7 +82,9 @@ public class BookingPage extends BasePage {
 
     public void verifyPrice() {
         switchToNewWindow();
-        closeTranslate.click();
+        if(isPresents(closeTranslate)){
+            javaScriptExecutorClick(closeTranslate);
+        }
         String displayPrice= price.getText();
         String displayTotalPrice= totalPrice.getText();
         System.out.println(displayPrice+"==="+displayTotalPrice);
