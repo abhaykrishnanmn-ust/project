@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Automation</td>
               <td>1</td>
-            <td>11 Sep 2024, 14:03</td>
+            <td>11 Sep 2024, 14:20</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Validating meet your host feature</td>
-                    <td      class="passed"    >6</td>
-          <td >0</td>
-          <td >0</td>
+                    <td      class="passed"    >4</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">6</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="27625779100">27s 625ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="29952726200">29s 952ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Validating meet your host feature</span>
   
@@ -191,9 +191,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify user is getting the correct host information</span>
   
@@ -204,7 +204,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -225,7 +225,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">1s 848ms</span>
+  <span class="lead-duration duration">1s 749ms</span>
 
           </div>
 
@@ -241,9 +241,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -253,14 +253,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">2s 271ms</span>
+  <span class="lead-duration duration">3s 296ms</span>
 
   </div>
 
@@ -281,7 +281,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">422ms</span>
+  <span class="lead-duration duration">292ms</span>
 
   </div>
 
@@ -298,13 +298,13 @@ $(document).ready(function() {
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1032115541.png" target="_blank">
+      <a href="embeddings/embedding_-576133158.png" target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-4" class="collapse collapsable-details">
       <span class="embedding-content">
-        <img src="embeddings/embedding_-1032115541.png">
+        <img src="embeddings/embedding_-576133158.png">
       </span>
     </div>
   </div>
@@ -317,7 +317,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user click on &quot;Amazing views&quot;</span>
   
-  <span class="lead-duration duration">1s 249ms</span>
+  <span class="lead-duration duration">2s 777ms</span>
 
   </div>
 
@@ -338,7 +338,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user selects first card</span>
   
-  <span class="lead-duration duration">21s 885ms</span>
+  <span class="lead-duration duration">22s 394ms</span>
 
   </div>
 
@@ -355,15 +355,54 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">And</span>
   <span class="name">user selects Meet your Host option</span>
   
-  <span class="lead-duration duration">153ms</span>
+  <span class="lead-duration duration">1s 191ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Error message</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a aria-label=&quot;Go to Host full profile&quot; href=&quot;/users/show/217029397&quot; class=&quot;l1ovpqvx atm_1he2i46_1k8pnbi_10saat9 atm_yxpdqi_1pv6nv4_10saat9 atm_1a0hdzc_w1h1e8_10saat9 atm_2bu6ew_929bqk_10saat9 atm_12oyo1u_73u7pn_10saat9 atm_fiaz40_1etamxe_10saat9 bbkw4bl atm_9j_tlke0l atm_mk_h2mmj6 atm_70_5j5alw atm_tl_1gw4zv3 atm_9j_13gfvf7_1o5j5ji c1rxa9od atm_fr_11a07z3 atm_uc_1lizyuv atm_r2_1j28jx2 atm_26_1j28jx2 atm_3f_glywfm atm_5j_idpfg4 atm_7l_1kw7nm4 atm_9s_1ulexfb atm_gi_idpfg4 atm_l8_idpfg4 atm_r3_1kw7nm4 atm_rd_glywfm atm_e2_1osqo2v atm_vy_1osqo2v atm_bx_1kw7nm4 atm_c8_1kw7nm4 atm_g3_1kw7nm4 atm_cs_1kw7nm4 atm_kd_glywfm atm_uc_glywfm__1rrf6b5 atm_kd_glywfm_1w3cfyq atm_70_1b8lkes_1w3cfyq atm_3f_glywfm_e4a3ld atm_l8_idpfg4_e4a3ld atm_gi_idpfg4_e4a3ld atm_3f_glywfm_1r4qscq atm_kd_glywfm_6y7yyg atm_kd_glywfm_pfnrn2_1oszvuo atm_70_1b8lkes_pfnrn2_1oszvuo atm_l8_idpfg4_1icshfk_1oszvuo atm_gi_idpfg4_1icshfk_1oszvuo atm_3f_glywfm_b5gff8_1oszvuo atm_kd_glywfm_2by9w9_1oszvuo atm_k4_kb7nvz_1o5j5ji atm_3f_glywfm_jo46a5 atm_l8_idpfg4_jo46a5 atm_gi_idpfg4_jo46a5 atm_3f_glywfm_1icshfk atm_kd_glywfm_19774hq atm_uc_aaiy6o_1w3cfyq atm_uc_glywfm_1w3cfyq_1rrf6b5 atm_uc_aaiy6o_pfnrn2_1oszvuo atm_uc_glywfm_pfnrn2_1o31aam atm_tr_glywfm_csw3t1 dir dir-ltr&quot;&gt;&lt;/a&gt; is not clickable at point (270, 3). Other element would receive the click: &lt;div class=&quot;_gn8vcs&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.137)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c102edce3ce2417f98b6a6bee549f0b, clickElement {id=f.1A8E56EF050675FE0E524C14A3FB9027.d.459DDE0ACAD6317E7036668B5465B255.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49608}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49608/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4c102edce3ce2417f98b6a6bee549f0b)] -&gt; xpath: //a[@aria-label='Go to Host full profile']]
+Session ID: 4c102edce3ce2417f98b6a6bee549f0b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.automation.pages.HomePage.selectMeetYourHost(HomePage.java:333)
+	at com.automation.steps.HomeSteps.user_selects_meet_your_host_option(HomeSteps.java:121)
+	at &#10045;.user selects Meet your Host option(file:///C:/UST_Java/project/src/test/resources/features/MeetYourHost.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -376,11 +415,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">verify displayed details with the host details</span>
   
-  <span class="lead-duration duration">1s 642ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -393,21 +432,6 @@ $(document).ready(function() {
         
 
         
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-656426846.png" target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-5" class="collapse collapsable-details">
-      <span class="embedding-content">
-        <img src="embeddings/embedding_-656426846.png">
-      </span>
-    </div>
-  </div>
-        </div>
   
       </div>
       </div>
@@ -434,7 +458,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">355ms</span>
+  <span class="lead-duration duration">530ms</span>
 
           </div>
 
@@ -442,6 +466,21 @@ $(document).ready(function() {
 
           
           
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_683632305.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-7" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_683632305.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
         </div>
           </div>

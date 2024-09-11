@@ -367,7 +367,6 @@ public class HomePage extends BasePage {
     }
 
     public boolean verifyThingsToDoMessage(String message) {
-        switchToNewWindow();
         scrollThePage(thingsToDo);
         return thingsToDo.getText().contains(message);
     }

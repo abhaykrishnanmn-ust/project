@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Automation</td>
               <td>1</td>
-            <td>11 Sep 2024, 14:03</td>
+            <td>11 Sep 2024, 14:20</td>
     </tr>
   </tbody>
 </table>
@@ -140,7 +140,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="83315263500">1m 23s 315ms</td>
+          <td class="duration" data-value="92748611500">1m 32s 748ms</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -225,7 +225,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">1s 513ms</span>
+  <span class="lead-duration duration">1s 497ms</span>
 
           </div>
 
@@ -260,7 +260,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">2s 738ms</span>
+  <span class="lead-duration duration">3s 124ms</span>
 
   </div>
 
@@ -281,7 +281,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">266ms</span>
+  <span class="lead-duration duration">268ms</span>
 
   </div>
 
@@ -298,13 +298,13 @@ $(document).ready(function() {
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1153728375.png" target="_blank">
+      <a href="embeddings/embedding_443466474.png" target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-4" class="collapse collapsable-details">
       <span class="embedding-content">
-        <img src="embeddings/embedding_1153728375.png">
+        <img src="embeddings/embedding_443466474.png">
       </span>
     </div>
   </div>
@@ -317,7 +317,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks on things to do</span>
   
-  <span class="lead-duration duration">2s 424ms</span>
+  <span class="lead-duration duration">2s 460ms</span>
 
   </div>
 
@@ -338,7 +338,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user selects destination</span>
   
-  <span class="lead-duration duration">3s 006ms</span>
+  <span class="lead-duration duration">1s 818ms</span>
 
   </div>
 
@@ -359,7 +359,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user search is performed</span>
   
-  <span class="lead-duration duration">077ms</span>
+  <span class="lead-duration duration">4s 310ms</span>
 
   </div>
 
@@ -380,7 +380,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user selects first card</span>
   
-  <span class="lead-duration duration">23s 807ms</span>
+  <span class="lead-duration duration">20s 709ms</span>
 
   </div>
 
@@ -401,7 +401,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">verify displayed details with the text</span>
   
-  <span class="lead-duration duration">50s 993ms</span>
+  <span class="lead-duration duration">1m 055ms</span>
 
   </div>
 
@@ -413,12 +413,26 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //button[@id='tab--seo-link-section-tabbed-dense-grid--7']
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='tab--seo-link-section-tabbed-dense-grid--7']&quot;}
+  (Session info: chrome=128.0.6613.137)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0dc08428f9709c22755615e40d21dada, findElement {value=//button[@id='tab--seo-link-section-tabbed-dense-grid--7'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49755/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0dc08428f9709c22755615e40d21dada
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
@@ -464,9 +478,9 @@ Driver info: driver.version: RemoteWebDriver
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#after-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
       
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
   
@@ -476,56 +490,35 @@ Driver info: driver.version: RemoteWebDriver
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details  in ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
               <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">886ms</span>
 
           </div>
 
                       
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Error message</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.137)
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [15c57df1bb166fd9eeca2b6206edbcc6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61499/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 15c57df1bb166fd9eeca2b6206edbcc6
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-	at com.automation.utils.ReportManager.takeScreenShot(ReportManager.java:21)
-	at com.automation.utils.ReportManager.attachScreenShot(ReportManager.java:16)
-	at com.automation.steps.Hooks.cleanUp(Hooks.java:22)
-</pre>
-      </div>
+          
+          
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1574772375.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-7" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1574772375.png">
+      </span>
     </div>
   </div>
-
-          
-          
+        </div>
   
         </div>
           </div>
