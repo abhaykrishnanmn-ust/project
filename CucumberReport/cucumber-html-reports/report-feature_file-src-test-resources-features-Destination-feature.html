@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Automation</td>
               <td>1</td>
-            <td>21 Aug 2024, 17:23</td>
+            <td>11 Sep 2024, 09:37</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Validate stays functionalities</td>
-                    <td      class="passed"    >100</td>
-          <td      class="failed"    >4</td>
-          <td     class="skipped"   >60</td>
+                    <td      class="passed"    >94</td>
+          <td      class="failed"    >5</td>
+          <td     class="skipped"   >19</td>
           <td >0</td>
-          <td   class="undefined" >13</td>
-          <td class="total">177</td>
+          <td >0</td>
+          <td class="total">118</td>
 
-          <td  class="passed"    >4</td>
-          <td  class="failed"    >17</td>
-          <td class="total">21</td>
+          <td  class="passed"    >7</td>
+          <td  class="failed"    >5</td>
+          <td class="total">12</td>
 
-          <td class="duration" data-value="417176049000">6m 57s 176ms</td>
+          <td class="duration" data-value="222635345200">3m 42s 635ms</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -225,7 +225,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">4s 834ms</span>
+  <span class="lead-duration duration">6s 467ms</span>
 
           </div>
 
@@ -260,7 +260,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">7s 186ms</span>
+  <span class="lead-duration duration">6s 426ms</span>
 
   </div>
 
@@ -281,154 +281,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">188ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on where</span>
-  
-  <span class="lead-duration duration">3s 465ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user selects destination by &quot;region&quot;</span>
-  
-  <span class="lead-duration duration">415ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">select check in and check out date</span>
-  
-  <span class="lead-duration duration">3s 944ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">select number of people</span>
-  
-  <span class="lead-duration duration">1s 364ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user click on search button</span>
-  
-  <span class="lead-duration duration">384ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify searched page is displayed</span>
-  
-  <span class="lead-duration duration">005ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user selects first card</span>
-  
-  <span class="lead-duration duration">3s 047ms</span>
+  <span class="lead-duration duration">6s 363ms</span>
 
   </div>
 
@@ -446,10 +299,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify displayed details with the input details</span>
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on where</span>
   
-  <span class="lead-duration duration">40s 784ms</span>
+  <span class="lead-duration duration">7s 739ms</span>
 
   </div>
 
@@ -461,16 +314,185 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.automation.steps.BookingSteps.verify_displayed_details_with_the_input_details(BookingSteps.java:23)
-	at &#10045;.verify displayed details with the input details(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:13)
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;label class=&quot;ihcg2em atm_9j_tlke0l atm_9s_1ulexfb atm_2a_1u8qnfj atm_3f_okh77k atm_5j_1vi7ecw atm_am_qk3dho atm_jb_idpfg4 atm_l8_2zoau0 atm_6h_1s2714j_vmtskl atm_66_nqa18y_vmtskl atm_4b_1egtlkw_vmtskl atm_5e_idpfg4_vmtskl atm_92_1yyfdc7_vmtskl atm_9s_glywfm_vmtskl atm_e2_1vi7ecw_vmtskl atm_h3_4h84z3_vmtskl atm_mk_stnw88_vmtskl atm_n3_idpfg4_vmtskl atm_tk_1ssbidh_vmtskl atm_wq_idpfg4_vmtskl atm_2a_1u8qnfj_9in345 atm_3f_okh77k_9in345 atm_5j_1vi7ecw_9in345 atm_6i_idpfg4_9in345 atm_92_1yyfdc7_9in345 atm_fq_idpfg4_9in345 atm_mk_stnw88_9in345 atm_n3_idpfg4_9in345 atm_tk_idpfg4_9in345 atm_wq_idpfg4_9in345 i1w7syu0 atm_9s_1ulexfb_1rqz0hn atm_h0_yh40bf_9bj8xt atm_2d_um1unu_9bj8xt atm_9s_1ulexfb_1jy6zas atm_2d_1p8m8iw_1joo1sn atm_4b_1p8m8iw_1joo1sn atm_70_d987b7_1joo1sn atm_fq_idpfg4_1joo1sn atm_n3_idpfg4_1joo1sn atm_h0_yh40bf_1joo1sn dir dir-ltr&quot; for=&quot;bigsearch-query-location-input&quot;&gt;...&lt;/label&gt; is not clickable at point (348, 113). Other element would receive the click: &lt;button type=&quot;button&quot; id=&quot;tab--language_region_and_currency--1&quot; aria-controls=&quot;panel--language_region_and_currency--1&quot; aria-selected=&quot;true&quot; class=&quot;t1jiriwb atm_bx_48h72j atm_c8_km0zk7 atm_g3_18khvle atm_fr_1m9t47k atm_cs_10d11i2 atm_5j_t09oo2 atm_3f_glywfm atm_26_1j28jx2 atm_l8_19bvopo atm_h3_i2wt44 atm_gq_i2wt44 atm_h0_i2wt44 atm_uc_1lizyuv atm_mk_h2mmj6 atm_kd_glywfm atm_gz_14idwd0_13mkcot atm_h0_idpfg4_8dt821 atm_3f_glywfm_jo46a5 atm_l8_idpfg4_jo46a5 atm_gi_idpfg4_jo46a5 atm_3f_glywfm_1icshfk atm_kd_glywfm_19774hq atm_uc_aaiy6o_1w3cfyq atm_3f_glywfm_1w3cfyq atm_26_zbnr2t_1w3cfyq atm_7l_jt7fhx_1w3cfyq atm_70_1e7pbig_1w3cfyq atm_uc_glywfm_1w3cfyq_1rrf6b5 atm_uc_aaiy6o_pfnrn2_1oszvuo atm_3f_glywfm_pfnrn2_1oszvuo atm_26_zbnr2t_pfnrn2_1oszvuo atm_7l_jt7fhx_pfnrn2_1oszvuo atm_70_1e7pbig_pfnrn2_1oszvuo atm_uc_glywfm_pfnrn2_1o31aam atm_26_zbnr2t_1nos8r_uv4tnr atm_9j_13gfvf7_1o5j5ji atm_7l_9vytuy_1o5j5ji atm_26_1j28jx2_1mj13j2_uv4tnr atm_uc_glywfm__1rrf6b5 srultre atm_7l_jt7fhx atm_9j_73adwj atm_tr_glywfm_csw3t1 atm_92_1yyfdc7_9in345 atm_mk_stnw88_9in345 atm_2d_jt7fhx_9in345 atm_6i_yjp0fh_9in345 atm_fq_19bvopo_9in345 atm_vy_wgn3io_9in345 atm_e2_yh40bf_9in345 dir dir-ltr&quot; role=&quot;tab&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=128.0.6613.137)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c93249e271f72f897fabc874071f224b, clickElement {id=f.9D0B1922A77CE24E9233C16EAC06B1F1.d.9DBC5A55942C1B950E8FE800355BB7FE.e.555}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60292}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60292/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c93249e271f72f897fabc874071f224b)] -&gt; xpath: //label[@for='bigsearch-query-location-input']]
+Session ID: c93249e271f72f897fabc874071f224b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.automation.pages.HomePage.clickOnWhere(HomePage.java:222)
+	at com.automation.steps.HomeSteps.user_clicks_on_where(HomeSteps.java:28)
+	at &#10045;.user clicks on where(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:6)
 </pre>
       </div>
     </div>
   </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user selects destination by &quot;region&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">select check in and check out date</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">select number of people</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">user click on search button</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify searched page is displayed</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">user selects first card</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify displayed details with the input details</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
 
 
         
@@ -505,7 +527,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">1s 963ms</span>
+  <span class="lead-duration duration">1s 541ms</span>
 
           </div>
 
@@ -513,21 +535,6 @@ $(document).ready(function() {
 
           
           
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-813204147.png" target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details">
-      <span class="embedding-content">
-        <img src="embeddings/embedding_-813204147.png">
-      </span>
-    </div>
-  </div>
-        </div>
   
         </div>
           </div>
@@ -544,7 +551,7 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -557,10 +564,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-6" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -572,13 +579,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-7" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">4s 002ms</span>
+  <span class="lead-duration duration">6s 215ms</span>
 
           </div>
 
@@ -594,7 +601,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -606,14 +613,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">2s 065ms</span>
+  <span class="lead-duration duration">8s 925ms</span>
 
   </div>
 
@@ -634,7 +641,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">386ms</span>
+  <span class="lead-duration duration">5s 959ms</span>
 
   </div>
 
@@ -647,78 +654,56 @@ $(document).ready(function() {
         
 
         
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on experiences</span>
-  
-  <span class="lead-duration duration">3s 566ms</span>
-
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1029886721.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-9" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1029886721.png">
+      </span>
+    </div>
   </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks on where</span>
-  
-  <span class="lead-duration duration">385ms</span>
-
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+      <a>Attachment 2 (png)</a>
+      <a href="embeddings/embedding_-1660237401.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-10" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1660237401.png">
+      </span>
+    </div>
   </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user selects destination by &quot;region&quot;</span>
-  
-  <span class="lead-duration duration">600ms</span>
-
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+      <a>Attachment 3 (png)</a>
+      <a href="embeddings/embedding_1646290596.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-11" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1646290596.png">
+      </span>
+    </div>
   </div>
-
-        
-
-
-        
-        
-
-        
-
-        
+        </div>
   
       </div>
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">select dates</span>
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on experiences</span>
   
-  <span class="lead-duration duration">1m 081ms</span>
+  <span class="lead-duration duration">3s 694ms</span>
 
   </div>
 
@@ -726,42 +711,146 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
           <a>Error message</a>
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=127.0.6533.120)
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7244fe3b575f942737a07ed4fe123efc, clickElement {id=f.1063635CA95480DF90633F6D6111CE79.d.85FF56B795A1D362C36EA8D976553A58.e.108}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64740/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7244fe3b575f942737a07ed4fe123efc)] -&gt; xpath: //h2[text()='September 2024']/ancestor::div/table//tr/td[contains(@aria-label,'18')]]
-Session ID: 7244fe3b575f942737a07ed4fe123efc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+Command: [a846c599ec5d9935cd457b6ab8317df2, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60579/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a846c599ec5d9935cd457b6ab8317df2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at com.automation.pages.HomePage.selectDatesOfExperiences(HomePage.java:138)
-	at com.automation.steps.HomeSteps.selectDates(HomeSteps.java:58)
-	at &#10045;.select dates(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:21)
+	at com.automation.pages.HomePage.clickOnExperiences(HomePage.java:257)
+	at com.automation.steps.HomeSteps.userClicksOnExperiences(HomeSteps.java:54)
+	at &#10045;.user clicks on experiences(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:18)
+Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@1d15b724 rejected from java.util.concurrent.ThreadPoolExecutor@4615694b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 330]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:184)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:176)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.asyncReceive(Http1AsyncReceiver.java:468)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:589)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:546)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:865)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
 </pre>
       </div>
     </div>
   </div>
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-13" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1646290596.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-13" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1646290596.png">
+      </span>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
+      <a>Attachment 2 (png)</a>
+      <a href="embeddings/embedding_926615043.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-14" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_926615043.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks on where</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user selects destination by &quot;region&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">select dates</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
 
 
         
@@ -778,7 +867,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">select number of people</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -883,9 +972,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+        <div data-toggle="collapse" class=" collapsable-control" data-target="#after-15">
       
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
   
@@ -895,35 +984,97 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details ">
+    <div id="after-15" class="inner-level collapse collapsable-details  in ">
               <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">2s 752ms</span>
+  <span class="lead-duration duration">003ms</span>
 
           </div>
 
                       
 
-          
-          
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_644991076.png" target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-12" class="collapse collapsable-details">
-      <span class="embedding-content">
-        <img src="embeddings/embedding_644991076.png">
-      </span>
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Error message</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a846c599ec5d9935cd457b6ab8317df2, screenshot []]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60579/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a846c599ec5d9935cd457b6ab8317df2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at com.automation.utils.ReportManager.takeScreenShot(ReportManager.java:21)
+	at com.automation.utils.ReportManager.attachScreenShot(ReportManager.java:16)
+	at com.automation.steps.Hooks.cleanUp(Hooks.java:22)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;java.net.http.HttpClient.sendAsync(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler)&quot; because &quot;this.client&quot; is null
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at com.automation.utils.ReportManager.takeScreenShot(ReportManager.java:21)
+	at com.automation.utils.ReportManager.attachScreenShot(ReportManager.java:16)
+	at com.automation.steps.Hooks.cleanUp(Hooks.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:345)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre>
+      </div>
     </div>
   </div>
-        </div>
+
+          
+          
   
         </div>
           </div>
@@ -940,7 +1091,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -953,10 +1104,10 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -968,13 +1119,13 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     </div>
 
-    <div id="before-14" class="inner-level collapse collapsable-details ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 772ms</span>
+  <span class="lead-duration duration">10s 628ms</span>
 
           </div>
 
@@ -990,7 +1141,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1002,14 +1153,14 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">1s 981ms</span>
+  <span class="lead-duration duration">3s 841ms</span>
 
   </div>
 
@@ -1030,7 +1181,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">1s 694ms</span>
+  <span class="lead-duration duration">5s 712ms</span>
 
   </div>
 
@@ -1043,40 +1194,113 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1142271230.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-20" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1142271230.png">
+      </span>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-21" class="collapsable-control">
+      <a>Attachment 2 (png)</a>
+      <a href="embeddings/embedding_-1142271230.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-21" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1142271230.png">
+      </span>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>Attachment 3 (png)</a>
+      <a href="embeddings/embedding_-95338502.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-22" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-95338502.png">
+      </span>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-23" class="collapsable-control">
+      <a>Attachment 4 (png)</a>
+      <a href="embeddings/embedding_-95338502.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-23" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-95338502.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
           <div class="step">
         
-<div class="brief undefined">
+<div class="brief failed">
   <span class="keyword indention">When</span>
-  <span class="name">user clicks on farm</span>
+  <span class="name">user click on &quot;farm&quot;</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">22s 030ms</span>
 
   </div>
 
         
 
-
-        
-        
-
-        
-
-        
-  
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Error message</a>
       </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks on search button</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='Farms']/ancestor::label&quot;}
+  (Session info: chrome=128.0.6613.137)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [025eaa85ea5df0cf13e5a31753792db2, findElement {using=xpath, value=//span[text()='Farms']/ancestor::label}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60819/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 025eaa85ea5df0cf13e5a31753792db2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.automation.pages.HomePage.clickOnBeachfront(HomePage.java:313)
+	at com.automation.steps.HomeSteps.userClickOn(HomeSteps.java:101)
+	at &#10045;.user click on &quot;farm&quot;(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:31)
+</pre>
+      </div>
+    </div>
   </div>
-
-        
 
 
         
@@ -1135,7 +1359,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-25">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1147,13 +1371,13 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     </div>
 
-    <div id="after-16" class="inner-level collapse collapsable-details ">
+    <div id="after-25" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">434ms</span>
+  <span class="lead-duration duration">1s 942ms</span>
 
           </div>
 
@@ -1161,6 +1385,47 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
           
           
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-26" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1471360662.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-26" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1471360662.png">
+      </span>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-27" class="collapsable-control">
+      <a>Attachment 2 (png)</a>
+      <a href="embeddings/embedding_-1471360662.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-27" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1471360662.png">
+      </span>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-28" class="collapsable-control">
+      <a>Attachment 3 (png)</a>
+      <a href="embeddings/embedding_-1471360662.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-28" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1471360662.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
         </div>
           </div>
@@ -1177,11 +1442,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify filter option</span>
+  <span class="name">Verify Price of stays</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1190,907 +1455,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </span>
   <div class="description indention"></div>
 
-  <div id="element-17" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-18" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">4s 518ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">4s 743ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">367ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on filter</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user selects filter by Entire home</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Price Range</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Rooms and Beds</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Amenities</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Booking options</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Top-tier stays</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Property type</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Accessibility features</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects filter by Host language</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user clicks on show</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user selects first card</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify displayed details with the user interest</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-20" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">1s 205ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify hosting</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-21" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-22" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">4s 056ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">3s 178ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">249ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on Airbnb your home</span>
-  
-  <span class="lead-duration duration">1s 893ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify text You could earn is displayed</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-24" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">666ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify language option</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-25" class="collapse collapsable-details ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-26" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">3s 836ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-27" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">2s 104ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">1s 179ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on global icon</span>
-  
-  <span class="lead-duration duration">1s 587ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify language options are displayed</span>
-  
-  <span class="lead-duration duration">452ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on language</span>
-  
-  <span class="lead-duration duration">5s 808ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">1s 881ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on global icon</span>
-  
-  <span class="lead-duration duration">2s 071ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify language is changed to the selected language</span>
-  
-  <span class="lead-duration duration">544ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-28" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">1s 092ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify currency</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-29" class="collapse collapsable-details  in ">
+  <div id="element-29" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
@@ -2111,7 +1476,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 465ms</span>
+  <span class="lead-duration duration">3s 632ms</span>
 
           </div>
 
@@ -2127,9 +1492,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-31">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -2139,14 +1504,14 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
   </div>
 
-  <div id="steps-31" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">1s 769ms</span>
+  <span class="lead-duration duration">2s 564ms</span>
 
   </div>
 
@@ -2167,7 +1532,43 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">1s 782ms</span>
+  <span class="lead-duration duration">1s 245ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-32" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-356360275.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-32" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-356360275.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on where</span>
+  
+  <span class="lead-duration duration">656ms</span>
 
   </div>
 
@@ -2185,10 +1586,10 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on global icon</span>
+  <span class="keyword indention">Then</span>
+  <span class="name">user selects destination by &quot;region&quot;</span>
   
-  <span class="lead-duration duration">1s 099ms</span>
+  <span class="lead-duration duration">809ms</span>
 
   </div>
 
@@ -2207,9 +1608,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user selects currency</span>
+  <span class="name">select check in and check out date</span>
   
-  <span class="lead-duration duration">620ms</span>
+  <span class="lead-duration duration">920ms</span>
 
   </div>
 
@@ -2226,53 +1627,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief undefined">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify currency options are displayed</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">select the currency</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user select on rooms</span>
+  <span class="name">select number of people</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">298ms</span>
 
   </div>
 
@@ -2289,11 +1648,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user clicks on the card</span>
+  <span class="name">user click on search button</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">284ms</span>
 
   </div>
 
@@ -2310,11 +1669,68 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify currency is changed to the selected currency</span>
+  <span class="name">verify searched page is displayed</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">515ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-33" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1535752149.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-33" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1535752149.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user selects first card</span>
+  
+  <span class="lead-duration duration">5s 360ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify price and total price is displayed correctly</span>
+  
+  <span class="lead-duration duration">1s 501ms</span>
 
   </div>
 
@@ -2335,7 +1751,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-34">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2347,13 +1763,13 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     </div>
 
-    <div id="after-32" class="inner-level collapse collapsable-details ">
+    <div id="after-34" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">698ms</span>
+  <span class="lead-duration duration">961ms</span>
 
           </div>
 
@@ -2377,11 +1793,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify image sliding functionality</span>
+  <span class="name">Verify before tax price button</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2390,10 +1806,10 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details  in ">
+  <div id="element-35" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-36">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2405,13 +1821,13 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     </div>
 
-    <div id="before-34" class="inner-level collapse collapsable-details ">
+    <div id="before-36" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 870ms</span>
+  <span class="lead-duration duration">3s 631ms</span>
 
           </div>
 
@@ -2427,9 +1843,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-35">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -2439,14 +1855,14 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
   </div>
 
-  <div id="steps-35" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-37" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">1s 795ms</span>
+  <span class="lead-duration duration">3s 968ms</span>
 
   </div>
 
@@ -2467,7 +1883,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">1s 890ms</span>
+  <span class="lead-duration duration">901ms</span>
 
   </div>
 
@@ -2480,210 +1896,30 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on the next in card image</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify image sliding functionality is working properly</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-38" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_187072309.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
     </div>
-
-    <div id="after-36" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">744ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-37">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify user is getting the correct host information</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-37" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
+    <div id="embedding-38" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_187072309.png">
+      </span>
     </div>
-
-    <div id="before-38" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">3s 918ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
+  </div>
         </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-39">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-39" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">2s 420ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
   
       </div>
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">396ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">user clicks on the first card</span>
+  <span class="name">user click on &quot;Beachfront&quot;</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 085ms</span>
 
   </div>
 
@@ -2700,11 +1936,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects Meet your Host more option</span>
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on the Display total before taxes</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 212ms</span>
 
   </div>
 
@@ -2721,11 +1957,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify displayed details with the host details</span>
+  <span class="name">verify total before price is displayed in the page</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">2s 415ms</span>
 
   </div>
 
@@ -2738,6 +1974,21 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-39" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-606678278.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-39" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-606678278.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
       </div>
@@ -2764,7 +2015,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">749ms</span>
+  <span class="lead-duration duration">626ms</span>
 
           </div>
 
@@ -2792,7 +2043,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify user is able to use help centre option</span>
+  <span class="name">Verify map name on card</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2822,7 +2073,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 488ms</span>
+  <span class="lead-duration duration">3s 702ms</span>
 
           </div>
 
@@ -2857,7 +2108,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">2s 477ms</span>
+  <span class="lead-duration duration">4s 128ms</span>
 
   </div>
 
@@ -2878,7 +2129,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">1s 808ms</span>
+  <span class="lead-duration duration">1s 064ms</span>
 
   </div>
 
@@ -2891,438 +2142,21 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks on profile icon</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on the help centre option</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify help centre page is displayed with text &quot;Hi, how can we help&quot;</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-44">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-44" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1765370743.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
     </div>
-
-    <div id="after-44" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">578ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-45">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Price</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-45" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-46">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
+    <div id="embedding-44" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1765370743.png">
+      </span>
     </div>
-
-    <div id="before-46" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">3s 502ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
+  </div>
         </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-47">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-47" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">1s 692ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">2s 056ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on the first card</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">get price and total price</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify price is displayed correctly</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-48" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">799ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-49">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify before tax price button</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-49" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-50">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-50" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">3s 743ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-51">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-51" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">2s 062ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">1s 283ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
   
       </div>
           <div class="step">
@@ -3331,223 +2165,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">When</span>
   <span class="name">user click on &quot;Beachfront&quot;</span>
   
-  <span class="lead-duration duration">1s 182ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on the Display total before taxes</span>
-  
-  <span class="lead-duration duration">367ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify before tax price is displayed correctly</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-52">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-52" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">706ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-53">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify map name on card</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-53" class="collapse collapsable-details ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-54">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-54" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">3s 903ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-55">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-55" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">2s 245ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">362ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user click on &quot;Beachfront&quot;</span>
-  
-  <span class="lead-duration duration">2s 831ms</span>
+  <span class="lead-duration duration">850ms</span>
 
   </div>
 
@@ -3568,7 +2186,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">user clicks on the Show map</span>
   
-  <span class="lead-duration duration">1s 407ms</span>
+  <span class="lead-duration duration">1s 703ms</span>
 
   </div>
 
@@ -3589,7 +2207,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">Then</span>
   <span class="name">verify map page is displayed</span>
   
-  <span class="lead-duration duration">3s 451ms</span>
+  <span class="lead-duration duration">1s 810ms</span>
 
   </div>
 
@@ -3610,7 +2228,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">When</span>
   <span class="name">user click on one of the price tag displayed</span>
   
-  <span class="lead-duration duration">425ms</span>
+  <span class="lead-duration duration">981ms</span>
 
   </div>
 
@@ -3631,7 +2249,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">Then</span>
   <span class="name">verify details card is displayed</span>
   
-  <span class="lead-duration duration">1s 136ms</span>
+  <span class="lead-duration duration">804ms</span>
 
   </div>
 
@@ -3648,15 +2266,55 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
   <span class="name">user clicks on the details card</span>
   
-  <span class="lead-duration duration">582ms</span>
+  <span class="lead-duration duration">11s 295ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Error message</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@aria-label='Close']&quot;}
+  (Session info: chrome=128.0.6613.137)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1198096ad1440c4c995eb5f0d2518939, findElement {using=xpath, value=//button[@aria-label='Close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61372/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1198096ad1440c4c995eb5f0d2518939
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.automation.pages.MapPage.clickDetailsCard(MapPage.java:62)
+	at com.automation.steps.MapSteps.user_clicks_on_the_details_card(MapSteps.java:30)
+	at &#10045;.user clicks on the details card(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:62)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -3669,7 +2327,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">verify map card detail with page detail</span>
   
@@ -3694,7 +2352,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-56">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-46">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3706,13 +2364,316 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     </div>
 
-    <div id="after-56" class="inner-level collapse collapsable-details ">
+    <div id="after-46" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">960ms</span>
+  <span class="lead-duration duration">1s 443ms</span>
+
+          </div>
+
+                      
+
+          
+          
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-47" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1524580651.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-47" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1524580651.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-48">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify things to do with map</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-48" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-49">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-49" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">3s 626ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-50">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-50" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user opens website</span>
+  
+  <span class="lead-duration duration">5s 038ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify user is on homepage</span>
+  
+  <span class="lead-duration duration">997ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-51" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1979604427.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-51" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1979604427.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on things to do</span>
+  
+  <span class="lead-duration duration">1s 003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user selects destination</span>
+  
+  <span class="lead-duration duration">2s 979ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user search is performed</span>
+  
+  <span class="lead-duration duration">161ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user selects map options</span>
+  
+  <span class="lead-duration duration">5s 465ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify content as what you will do is present with same price in map</span>
+  
+  <span class="lead-duration duration">830ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-52" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1556074632.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-52" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1556074632.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-53">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-53" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">897ms</span>
 
           </div>
 
@@ -3736,11 +2697,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-57">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-54">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify things to do with what you will do</span>
+  <span class="name">Verify Host preview and host in card</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -3749,10 +2710,10 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </span>
   <div class="description indention"></div>
 
-  <div id="element-57" class="collapse collapsable-details  in ">
+  <div id="element-54" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-58">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-55">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3764,13 +2725,13 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     </div>
 
-    <div id="before-58" class="inner-level collapse collapsable-details ">
+    <div id="before-55" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 709ms</span>
+  <span class="lead-duration duration">3s 010ms</span>
 
           </div>
 
@@ -3786,9 +2747,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-59">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-56">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -3798,14 +2759,14 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
   </div>
 
-  <div id="steps-59" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-56" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">2s 028ms</span>
+  <span class="lead-duration duration">4s 470ms</span>
 
   </div>
 
@@ -3826,7 +2787,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">2s 073ms</span>
+  <span class="lead-duration duration">821ms</span>
 
   </div>
 
@@ -3839,15 +2800,30 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-57" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-65563097.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-57" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-65563097.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
           <div class="step">
         
-<div class="brief undefined">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user clicks on things to do</span>
+  <span class="name">user clicks on where</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">754ms</span>
 
   </div>
 
@@ -3864,11 +2840,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user selects destination</span>
+  <span class="name">user selects destination by &quot;region&quot;</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">324ms</span>
 
   </div>
 
@@ -3885,32 +2861,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user search is performed</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user selects first card</span>
+  <span class="name">select check in and check out date</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">600ms</span>
 
   </div>
 
@@ -3927,11 +2882,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify content as what you will do is present</span>
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">select number of people</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">303ms</span>
 
   </div>
 
@@ -3944,6 +2899,183 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user click on search button</span>
+  
+  <span class="lead-duration duration">195ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify searched page is displayed</span>
+  
+  <span class="lead-duration duration">293ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-58" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1666436564.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-58" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1666436564.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user selects a card with host preview</span>
+  
+  <span class="lead-duration duration">3s 690ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">host details are taken</span>
+  
+  <span class="lead-duration duration">3s 847ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user close the preview</span>
+  
+  <span class="lead-duration duration">600ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user open the same card</span>
+  
+  <span class="lead-duration duration">3s 469ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify displayed host details with the details in preview</span>
+  
+  <span class="lead-duration duration">783ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-59" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-709162986.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-59" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-709162986.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
       </div>
@@ -3970,7 +3102,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">693ms</span>
+  <span class="lead-duration duration">1s 051ms</span>
 
           </div>
 
@@ -3994,11 +3126,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-61">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify things to do with map</span>
+  <span class="name">Verify typing destination for Experiences</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -4007,7 +3139,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   </span>
   <div class="description indention"></div>
 
-  <div id="element-61" class="collapse collapsable-details  in ">
+  <div id="element-61" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-62">
@@ -4028,7 +3160,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 573ms</span>
+  <span class="lead-duration duration">3s 289ms</span>
 
           </div>
 
@@ -4044,9 +3176,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-63">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-63">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -4056,14 +3188,14 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 
   </div>
 
-  <div id="steps-63" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-63" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">2s 226ms</span>
+  <span class="lead-duration duration">2s 511ms</span>
 
   </div>
 
@@ -4084,7 +3216,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">239ms</span>
+  <span class="lead-duration duration">747ms</span>
 
   </div>
 
@@ -4097,273 +3229,30 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on things to do</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user selects destination</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user search is performed</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user selects map options</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify content as what you will do is present with same price in map</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-64">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-64" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_2051248395.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
     </div>
-
-    <div id="after-64" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">975ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-65">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Host preview and host in card</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-65" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-66">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
+    <div id="embedding-64" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_2051248395.png">
+      </span>
     </div>
-
-    <div id="before-66" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">4s 302ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
+  </div>
         </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-67">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-67" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">2s 153ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">1s 735ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
   
       </div>
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user clicks on where</span>
+  <span class="name">user clicks on experiences</span>
   
-  <span class="lead-duration duration">1s 706ms</span>
+  <span class="lead-duration duration">1s 267ms</span>
 
   </div>
 
@@ -4382,9 +3271,30 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user selects destination by &quot;region&quot;</span>
+  <span class="name">user types location &quot;bali&quot; in the search destination field</span>
   
-  <span class="lead-duration duration">487ms</span>
+  <span class="lead-duration duration">328ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on destination</span>
+  
+  <span class="lead-duration duration">1s 547ms</span>
 
   </div>
 
@@ -4403,9 +3313,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">select check in and check out date</span>
+  <span class="name">select dates</span>
   
-  <span class="lead-duration duration">2s 484ms</span>
+  <span class="lead-duration duration">483ms</span>
 
   </div>
 
@@ -4426,7 +3336,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">select number of people</span>
   
-  <span class="lead-duration duration">2s 433ms</span>
+  <span class="lead-duration duration">295ms</span>
 
   </div>
 
@@ -4447,7 +3357,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">When</span>
   <span class="name">user click on search button</span>
   
-  <span class="lead-duration duration">706ms</span>
+  <span class="lead-duration duration">140ms</span>
 
   </div>
 
@@ -4466,9 +3376,9 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify searched page is displayed</span>
+  <span class="name">verify experience page is displayed</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 750ms</span>
 
   </div>
 
@@ -4481,15 +3391,30 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-65" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1089438551.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-65" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1089438551.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
           <div class="step">
         
-<div class="brief undefined">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user selects a card with host preview</span>
+  <span class="name">user selects first card on experience page</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">5s 306ms</span>
 
   </div>
 
@@ -4506,11 +3431,11 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">host details are taken</span>
+  <span class="name">verify displayed details on experience page with the input details</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 713ms</span>
 
   </div>
 
@@ -4523,69 +3448,34 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user close the preview</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-66" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1106361997.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-66" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1106361997.png">
+      </span>
+    </div>
   </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user open the same card</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-67" class="collapsable-control">
+      <a>Attachment 2 (png)</a>
+      <a href="embeddings/embedding_527640472.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-67" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_527640472.png">
+      </span>
+    </div>
   </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify displayed host details with the details in preview</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
+        </div>
   
       </div>
       </div>
@@ -4612,7 +3502,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">716ms</span>
+  <span class="lead-duration duration">900ms</span>
 
           </div>
 
@@ -4640,7 +3530,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify typing destination for Experiences</span>
+  <span class="name">Verify date change for Experiences</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -4670,7 +3560,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 382ms</span>
+  <span class="lead-duration duration">3s 206ms</span>
 
           </div>
 
@@ -4705,7 +3595,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">1s 867ms</span>
+  <span class="lead-duration duration">4s 232ms</span>
 
   </div>
 
@@ -4726,7 +3616,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">2s 178ms</span>
+  <span class="lead-duration duration">1s 003ms</span>
 
   </div>
 
@@ -4739,6 +3629,21 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-72" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_53781499.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-72" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_53781499.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
           <div class="step">
@@ -4747,7 +3652,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">When</span>
   <span class="name">user clicks on experiences</span>
   
-  <span class="lead-duration duration">902ms</span>
+  <span class="lead-duration duration">819ms</span>
 
   </div>
 
@@ -4768,7 +3673,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">Then</span>
   <span class="name">user types location &quot;bali&quot; in the search destination field</span>
   
-  <span class="lead-duration duration">924ms</span>
+  <span class="lead-duration duration">251ms</span>
 
   </div>
 
@@ -4789,7 +3694,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">When</span>
   <span class="name">user clicks on destination</span>
   
-  <span class="lead-duration duration">1s 208ms</span>
+  <span class="lead-duration duration">650ms</span>
 
   </div>
 
@@ -4810,7 +3715,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">select dates</span>
   
-  <span class="lead-duration duration">2s 405ms</span>
+  <span class="lead-duration duration">595ms</span>
 
   </div>
 
@@ -4831,7 +3736,7 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
   <span class="keyword indention">And</span>
   <span class="name">select number of people</span>
   
-  <span class="lead-duration duration">1s 960ms</span>
+  <span class="lead-duration duration">478ms</span>
 
   </div>
 
@@ -4851,6 +3756,147 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">user click on search button</span>
+  
+  <span class="lead-duration duration">165ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify experience page is displayed</span>
+  
+  <span class="lead-duration duration">1s 602ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-73" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_2130597064.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-73" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_2130597064.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user selects first card on experience page</span>
+  
+  <span class="lead-duration duration">4s 181ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user click on dates</span>
+  
+  <span class="lead-duration duration">290ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user changes dates</span>
+  
+  <span class="lead-duration duration">2s 126ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user click on save</span>
+  
+  <span class="lead-duration duration">156ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify displayed dates are different from previous dates</span>
   
   <span class="lead-duration duration">457ms</span>
 
@@ -4865,563 +3911,56 @@ Session ID: 7244fe3b575f942737a07ed4fe123efc
         
 
         
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify experience page is displayed</span>
-  
-  <span class="lead-duration duration">1s 887ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user selects first card on experience page</span>
-  
-  <span class="lead-duration duration">5s 225ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify displayed details on experience page with the input details</span>
-  
-  <span class="lead-duration duration">2s 120ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-72" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">852ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-73">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify date change for Experiences</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-73" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-74">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-74" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">3s 501ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-75">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-75" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">4s 627ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">344ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on experiences</span>
-  
-  <span class="lead-duration duration">3s 583ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user types location &quot;bali&quot; in the search destination field</span>
-  
-  <span class="lead-duration duration">623ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on destination</span>
-  
-  <span class="lead-duration duration">982ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">select dates</span>
-  
-  <span class="lead-duration duration">1m 325ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
-          <a>Error message</a>
-      </div>
-      <div id="msg-76" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=127.0.6533.120)
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [764f7a03ed942e420788d18c61cd393d, clickElement {id=f.AB716BA81572B01E550565AA89B38DF2.d.0AE341CBCE5F9980F5A2ABC0897E491D.e.128}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57147/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (764f7a03ed942e420788d18c61cd393d)] -&gt; xpath: //h2[text()='September 2024']/ancestor::div/table//tr/td[contains(@aria-label,'18')]]
-Session ID: 764f7a03ed942e420788d18c61cd393d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at com.automation.pages.HomePage.selectDatesOfExperiences(HomePage.java:138)
-	at com.automation.steps.HomeSteps.selectDates(HomeSteps.java:58)
-	at &#10045;.select dates(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:177)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">select number of people</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user click on search button</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify experience page is displayed</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user selects first card on experience page</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user click on dates</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user changes dates</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user click on save</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify displayed dates are different from previous dates</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-77">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-77" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">2s 090ms</span>
-
-          </div>
-
-                      
-
-          
-          
     <div class="embeddings inner-level">
                 <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-78" class="collapsable-control">
+        <div data-toggle="collapse" data-target="#embedding-74" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-988782655.png" target="_blank">
+      <a href="embeddings/embedding_-833219518.png" target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-78" class="collapse collapsable-details">
+    <div id="embedding-74" class="collapse collapsable-details">
       <span class="embedding-content">
-        <img src="embeddings/embedding_-988782655.png">
+        <img src="embeddings/embedding_-833219518.png">
       </span>
     </div>
   </div>
         </div>
   
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-75">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-75" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 063ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  
         </div>
           </div>
   </div>
@@ -5437,7 +3976,7 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-79">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-76">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -5450,10 +3989,10 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
   </span>
   <div class="description indention"></div>
 
-  <div id="element-79" class="collapse collapsable-details  in ">
+  <div id="element-76" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-80">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-77">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -5465,13 +4004,13 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
 
     </div>
 
-    <div id="before-80" class="inner-level collapse collapsable-details ">
+    <div id="before-77" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 864ms</span>
+  <span class="lead-duration duration">3s 518ms</span>
 
           </div>
 
@@ -5487,7 +4026,7 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-81">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-78">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -5499,14 +4038,14 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
 
   </div>
 
-  <div id="steps-81" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-78" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">8s 520ms</span>
+  <span class="lead-duration duration">4s 297ms</span>
 
   </div>
 
@@ -5527,7 +4066,7 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">403ms</span>
+  <span class="lead-duration duration">794ms</span>
 
   </div>
 
@@ -5540,6 +4079,21 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-79" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-2112074812.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-79" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-2112074812.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
           <div class="step">
@@ -5548,7 +4102,7 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
   <span class="keyword indention">When</span>
   <span class="name">user clicks on experiences</span>
   
-  <span class="lead-duration duration">1s 110ms</span>
+  <span class="lead-duration duration">998ms</span>
 
   </div>
 
@@ -5569,7 +4123,7 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
   <span class="keyword indention">Then</span>
   <span class="name">user types location &quot;bali&quot; in the search destination field</span>
   
-  <span class="lead-duration duration">249ms</span>
+  <span class="lead-duration duration">296ms</span>
 
   </div>
 
@@ -5590,7 +4144,148 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
   <span class="keyword indention">When</span>
   <span class="name">user clicks on destination</span>
   
-  <span class="lead-duration duration">886ms</span>
+  <span class="lead-duration duration">1s 214ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">select dates</span>
+  
+  <span class="lead-duration duration">720ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">select number of people</span>
+  
+  <span class="lead-duration duration">390ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user click on search button</span>
+  
+  <span class="lead-duration duration">209ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify experience page is displayed</span>
+  
+  <span class="lead-duration duration">1s 595ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-80" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-429432021.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-80" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-429432021.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user selects first card on experience page</span>
+  
+  <span class="lead-duration duration">4s 032ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user scrolls through the page till similar experiences</span>
+  
+  <span class="lead-duration duration">1s 819ms</span>
 
   </div>
 
@@ -5608,10 +4303,10 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">select dates</span>
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on the card on similar experiences</span>
   
-  <span class="lead-duration duration">1m 178ms</span>
+  <span class="lead-duration duration">1s 363ms</span>
 
   </div>
 
@@ -5619,19 +4314,19 @@ Session ID: 764f7a03ed942e420788d18c61cd393d
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-82">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-81">
           <a>Error message</a>
       </div>
-      <div id="msg-82" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=127.0.6533.120)
+      <div id="msg-81" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;c26ov08 atm_cs_6adqpa atm_7l_dezgoh atm_mk_h2mmj6 dir dir-ltr&quot; aria-label=&quot;Ubud Atv Quad Bike and Water Rafting with Lunch and Transfer&quot; data-testid=&quot;experience-card&quot; role=&quot;group&quot; style=&quot;--theme_typography-color-primary: var(--linaria-theme_palette-hof); --theme_typography-color-secondary: var(--linaria-theme_palette-foggy);&quot;&gt;...&lt;/div&gt; is not clickable at point (188, 57). Other element would receive the click: &lt;div class=&quot;_gn8vcs&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.137)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [65425d4ba9f38fb8e127a14a632926e3, clickElement {id=f.09C8ABB097BAFB8884014F9C17951AE2.d.76CCE1AD545E5F1FE27D0453CFCE142D.e.201}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61266}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61266/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (65425d4ba9f38fb8e127a14a632926e3)] -&gt; xpath: //h2[text()='September 2024']/ancestor::div/table//tr/td[contains(@aria-label,'18')]]
-Session ID: 65425d4ba9f38fb8e127a14a632926e3
+Command: [4406f94fbbbc1af90faac44d560055a4, clickElement {id=f.68084120981463DCE85DDF8EB5E4E17E.d.B864E9397AC35E11F63E7922E69F1620.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\280683\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49283/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4406f94fbbbc1af90faac44d560055a4)] -&gt; xpath: //div[@data-testid='experience-card']]
+Session ID: 4406f94fbbbc1af90faac44d560055a4
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -5648,139 +4343,13 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at com.automation.pages.HomePage.selectDatesOfExperiences(HomePage.java:138)
-	at com.automation.steps.HomeSteps.selectDates(HomeSteps.java:58)
-	at &#10045;.select dates(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:193)
+	at com.automation.pages.ExperiencePage.clickOnCardOfSimilarSearches(ExperiencePage.java:85)
+	at com.automation.steps.ExperienceSteps.user_clicks_on_the_card_on_similar_experiences(ExperienceSteps.java:40)
+	at &#10045;.user clicks on the card on similar experiences(file:///C:/UST_Java/project/src/test/resources/features/Destination.feature:130)
 </pre>
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">select number of people</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user click on search button</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify experience page is displayed</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user selects first card on experience page</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user scrolls through the page till similar experiences</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on the card on similar experiences</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
 
 
         
@@ -5818,7 +4387,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-83">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-82">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -5830,13 +4399,13 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 
     </div>
 
-    <div id="after-83" class="inner-level collapse collapsable-details ">
+    <div id="after-82" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 231ms</span>
+  <span class="lead-duration duration">1s 528ms</span>
 
           </div>
 
@@ -5846,15 +4415,15 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
           
     <div class="embeddings inner-level">
                 <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-84" class="collapsable-control">
+        <div data-toggle="collapse" data-target="#embedding-83" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1451261446.png" target="_blank">
+      <a href="embeddings/embedding_179316987.png" target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-84" class="collapse collapsable-details">
+    <div id="embedding-83" class="collapse collapsable-details">
       <span class="embedding-content">
-        <img src="embeddings/embedding_-1451261446.png">
+        <img src="embeddings/embedding_179316987.png">
       </span>
     </div>
   </div>
@@ -5875,7 +4444,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-85">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-84">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -5888,10 +4457,10 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   </span>
   <div class="description indention"></div>
 
-  <div id="element-85" class="collapse collapsable-details ">
+  <div id="element-84" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-86">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-85">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -5903,13 +4472,13 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 
     </div>
 
-    <div id="before-86" class="inner-level collapse collapsable-details ">
+    <div id="before-85" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">4s 159ms</span>
+  <span class="lead-duration duration">3s 492ms</span>
 
           </div>
 
@@ -5925,7 +4494,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-87">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-86">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -5937,14 +4506,14 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 
   </div>
 
-  <div id="steps-87" class="inner-level collapse collapsable-details ">
+  <div id="steps-86" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user opens website</span>
   
-  <span class="lead-duration duration">3s 598ms</span>
+  <span class="lead-duration duration">5s 270ms</span>
 
   </div>
 
@@ -5965,7 +4534,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">And</span>
   <span class="name">verify user is on homepage</span>
   
-  <span class="lead-duration duration">8s 547ms</span>
+  <span class="lead-duration duration">1s 119ms</span>
 
   </div>
 
@@ -5978,6 +4547,21 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-87" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1292958025.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-87" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1292958025.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
           <div class="step">
@@ -5986,7 +4570,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">When</span>
   <span class="name">user clicks on where</span>
   
-  <span class="lead-duration duration">9s 491ms</span>
+  <span class="lead-duration duration">733ms</span>
 
   </div>
 
@@ -6007,7 +4591,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">Then</span>
   <span class="name">user selects destination by &quot;region&quot;</span>
   
-  <span class="lead-duration duration">604ms</span>
+  <span class="lead-duration duration">309ms</span>
 
   </div>
 
@@ -6028,7 +4612,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">And</span>
   <span class="name">select check in and check out date</span>
   
-  <span class="lead-duration duration">3s 822ms</span>
+  <span class="lead-duration duration">898ms</span>
 
   </div>
 
@@ -6049,7 +4633,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">And</span>
   <span class="name">select number of people</span>
   
-  <span class="lead-duration duration">1s 803ms</span>
+  <span class="lead-duration duration">516ms</span>
 
   </div>
 
@@ -6070,7 +4654,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">When</span>
   <span class="name">user click on search button</span>
   
-  <span class="lead-duration duration">1s 075ms</span>
+  <span class="lead-duration duration">315ms</span>
 
   </div>
 
@@ -6091,7 +4675,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">Then</span>
   <span class="name">verify searched page is displayed</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">549ms</span>
 
   </div>
 
@@ -6104,6 +4688,21 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
         
 
         
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-88" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1718571846.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-88" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_1718571846.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
       </div>
           <div class="step">
@@ -6112,7 +4711,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">When</span>
   <span class="name">user selects any card</span>
   
-  <span class="lead-duration duration">2s 709ms</span>
+  <span class="lead-duration duration">3s 247ms</span>
 
   </div>
 
@@ -6133,7 +4732,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
   <span class="keyword indention">Then</span>
   <span class="name">verify the price distribution is equals total price</span>
   
-  <span class="lead-duration duration">2s 976ms</span>
+  <span class="lead-duration duration">5s 131ms</span>
 
   </div>
 
@@ -6154,7 +4753,7 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-88">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-89">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -6166,250 +4765,13 @@ Session ID: 65425d4ba9f38fb8e127a14a632926e3
 
     </div>
 
-    <div id="after-88" class="inner-level collapse collapsable-details ">
+    <div id="after-89" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">1s 013ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-89">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify hosting page price slider</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-89" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-90">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-90" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">com.automation.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">3s 806ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-91">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-91" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user opens website</span>
-  
-  <span class="lead-duration duration">2s 499ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify user is on homepage</span>
-  
-  <span class="lead-duration duration">162ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on Airbnb your home</span>
-  
-  <span class="lead-duration duration">3s 876ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify text You could earn is displayed</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">user uses slider</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the price is changing</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-92">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-92" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">com.automation.steps.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">807ms</span>
+  <span class="lead-duration duration">934ms</span>
 
           </div>
 
