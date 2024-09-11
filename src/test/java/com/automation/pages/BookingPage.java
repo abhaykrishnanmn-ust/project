@@ -53,7 +53,6 @@ public class BookingPage extends BasePage {
     }
 
     public boolean verifyCheckInDate() {
-        switchToNewWindow();
         if(isPresents(closeTranslate)){
             javaScriptExecutorClick(closeTranslate);
         }
@@ -78,10 +77,10 @@ public class BookingPage extends BasePage {
     public void clickOnAnyCard() {
         isPresent(cardClick);
         cardClick.click();
+        switchToNewWindow();
     }
 
     public void verifyPrice() {
-        switchToNewWindow();
         if(isPresents(closeTranslate)){
             javaScriptExecutorClick(closeTranslate);
         }
