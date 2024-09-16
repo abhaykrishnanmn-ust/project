@@ -102,13 +102,13 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[@class='_3hmsj']//child::button")
     WebElement profileIcon;
 
-    @FindBy(xpath = "//div[@data-testid='simple-header-profile-menu']//a[4]")
+    @FindBy(xpath = "//div[@data-testid='simple-header-profile-menu']//a[5]")
     WebElement helpCentre;
 
     @FindBy(xpath = "//button[@id='tab--seo-link-section-tabbed-dense-grid--7']")
     WebElement thingsToDo;
 
-    @FindBy(xpath = "//div[@id=\"panel--seo-link-section-tabbed-dense-grid--7\"]/ul/li[13]/a/span[1]")
+    @FindBy(xpath = "//div[@id='panel--seo-link-section-tabbed-dense-grid--7']//span[contains(text(),'London')]")
     WebElement destination;
 
     @FindBy(xpath = "//button[@data-testid='category-bar-filter-button']")
@@ -367,9 +367,9 @@ public class HomePage extends BasePage {
     }
 
     public boolean verifyThingsToDoMessage(String message) {
-        switchToNewWindow();
-        scrollThePage(thingsToDo);
-        return thingsToDo.getText().contains(message);
+//        switchToNewWindow();
+        scrollThePage(thingsToDoMessage);
+        return thingsToDoMessage.getText().contains(message);
     }
 
     public void clickOnNextCardImage() {
@@ -379,6 +379,10 @@ public class HomePage extends BasePage {
 
     public boolean verifySlidingImage(String page) {
         slideImageElement.isDisplayed();
+        for (int i=0;i<5;i++){
+            if(slideImageElement.getAttribute("aria-label").contains(page + " of")) {
+            }
+        }
         return slideImageElement.getAttribute("aria-label").contains(page + " of");
     }
 

@@ -53,7 +53,6 @@ abstract class BasePage {
     }
 
     public void javaScriptExecutorClick(WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
     }
 
@@ -68,7 +67,10 @@ abstract class BasePage {
     }
 
     public void moveToAnElement(WebElement element) {
-        actions.moveToElement(element).pause(Duration.ofMillis(10)).build().perform();
+        actions.moveToElement(element).pause(Duration.ofMillis(100)).build().perform();
+    }
+    public void doubleClick(){
+        actions.doubleClick();
     }
 
     public void cursorToEndOfWord() {

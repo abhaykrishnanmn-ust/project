@@ -1,6 +1,6 @@
 Feature: Validate stays functionalities
 
-  Scenario: Verify searching destination functionality
+  Scenario: Verify searching destination for stays functionality
     Given user opens website
     And verify user is on homepage
     When user clicks on where

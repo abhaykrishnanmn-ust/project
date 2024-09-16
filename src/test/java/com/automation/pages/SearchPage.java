@@ -8,7 +8,8 @@ public class SearchPage extends BasePage {
     WebElement searchBtn;
 
     public void clickOnSearchButton() {
-        switchToNewWindow();
+//        switchToNewWindow();
         searchBtn.click();
+        switchToNewWindow();
     }
 }
