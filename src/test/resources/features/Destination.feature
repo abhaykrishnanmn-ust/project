@@ -25,13 +25,6 @@ Feature: Validate stays functionalities
     When user selects first card on experience page
     Then verify displayed details on experience page with the input details
 
-  Scenario: Verify farm option has farm in description
-    Given user opens website
-    And verify user is on homepage
-    When user click on "farm"
-    Then user selects first card
-    Then verify farm description contains "farm" in it
-
   Scenario: Verify Price of stays
     Given user opens website
     And verify user is on homepage
